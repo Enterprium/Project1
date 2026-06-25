@@ -1,217 +1,1072 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Enterprium | About Us</title>
-  <meta name="description" content="Enterprium is an AI-powered software house with a San Francisco business presence, human-led delivery, AI automation, software engineering, CRM, e-commerce, dashboards, and cloud solutions." />
-  <meta name="robots" content="index,follow" />
-  <meta name="theme-color" content="#020509" />
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
-  <style>
-    :root{
-      --void:#020509;--deep:#050b16;--panel:rgba(6,12,24,.76);--panel2:rgba(11,20,38,.88);--line:rgba(0,212,255,.18);--line2:rgba(255,255,255,.10);--text:#fff;--muted:#8aa0b8;--soft:#b7c9d9;--cyan:#00d4ff;--blue:#2563eb;--violet:#6d28d9;--purple:#a855f7;--green:#22c55e;--amber:#f59e0b;--pink:#ec4899;
-    }
-    *{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{background:var(--void);color:var(--text);font-family:Inter,system-ui,sans-serif;overflow-x:hidden;line-height:1.6}a{color:inherit;text-decoration:none}img{max-width:100%;display:block}button{font:inherit}.mono{font-family:"JetBrains Mono",monospace}.wrap{width:min(1180px,88vw);margin:auto}.grain{position:fixed;inset:0;pointer-events:none;z-index:1;opacity:.08;background-image:radial-gradient(circle at 1px 1px,#fff 1px,transparent 0);background-size:30px 30px}.orb{position:fixed;border-radius:50%;filter:blur(50px);opacity:.35;pointer-events:none;z-index:0}.orb.one{width:420px;height:420px;background:var(--cyan);left:-160px;top:60px}.orb.two{width:520px;height:520px;background:var(--violet);right:-180px;top:240px}.orb.three{width:420px;height:420px;background:var(--blue);left:20%;bottom:-240px}.site{position:relative;z-index:2}.nav{position:fixed;top:0;left:0;right:0;z-index:20;background:rgba(2,5,9,.68);backdrop-filter:blur(24px);border-bottom:1px solid var(--line2)}.nav-inner{height:78px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:12px;font-family:"Space Grotesk",sans-serif;font-weight:800;letter-spacing:.04em}.brand-mark{width:42px;height:42px;border-radius:14px;background:linear-gradient(135deg,var(--cyan),var(--violet));display:grid;place-items:center;box-shadow:0 0 30px rgba(0,212,255,.28)}.brand-mark span{color:#fff;font-weight:900}.nav-links{display:flex;gap:28px;color:var(--soft);font-size:.9rem}.nav-links a{transition:.25s}.nav-links a:hover{color:var(--cyan)}.nav-cta{padding:10px 18px;border:1px solid var(--line);border-radius:999px;color:var(--cyan);font-size:.82rem;background:rgba(0,212,255,.06)}.hero{min-height:100vh;display:flex;align-items:center;padding:138px 0 82px;position:relative}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:52px;align-items:center}.eyebrow,.pill{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--line);background:rgba(0,212,255,.08);color:var(--cyan);border-radius:999px;padding:7px 14px;font-size:.72rem;letter-spacing:.13em;text-transform:uppercase}.dot{width:7px;height:7px;border-radius:50%;background:var(--cyan);box-shadow:0 0 18px var(--cyan)}h1,h2,h3{font-family:"Space Grotesk",sans-serif;line-height:1.03}.hero h1{font-size:clamp(3rem,7vw,6.8rem);letter-spacing:-.065em;margin:24px 0}.grad{background:linear-gradient(120deg,#fff 0%,var(--cyan) 45%,var(--purple) 100%);-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{font-size:1.1rem;color:var(--soft);max-width:680px}.hero-actions{display:flex;gap:16px;flex-wrap:wrap;margin-top:32px}.btn{display:inline-flex;align-items:center;gap:10px;border-radius:12px;padding:15px 22px;font-weight:800;font-family:"Space Grotesk",sans-serif;letter-spacing:.04em;text-transform:uppercase;font-size:.82rem;transition:.25s}.btn.primary{background:linear-gradient(135deg,var(--cyan),var(--violet));box-shadow:0 0 45px rgba(0,212,255,.24)}.btn.secondary{border:1px solid var(--line2);background:rgba(255,255,255,.04);color:var(--soft)}.btn:hover{transform:translateY(-3px)}.hero-card{position:relative;min-height:550px;border-radius:34px;overflow:hidden;border:1px solid var(--line);background:linear-gradient(180deg,rgba(11,20,38,.9),rgba(2,5,9,.78));box-shadow:0 30px 100px rgba(0,0,0,.45)}.hero-card:before{content:"";position:absolute;inset:-1px;background:radial-gradient(circle at 25% 20%,rgba(0,212,255,.32),transparent 34%),radial-gradient(circle at 82% 15%,rgba(109,40,217,.32),transparent 34%);pointer-events:none}.node-map{position:absolute;inset:34px;border:1px solid rgba(255,255,255,.08);border-radius:26px;background:rgba(255,255,255,.03);overflow:hidden}.node-map svg{position:absolute;inset:0;width:100%;height:100%;opacity:.72}.console{position:absolute;left:28px;right:28px;bottom:28px;border:1px solid rgba(0,212,255,.22);border-radius:20px;background:rgba(2,5,9,.76);backdrop-filter:blur(20px);padding:22px}.console-row{display:flex;justify-content:space-between;gap:16px;padding:9px 0;border-bottom:1px solid rgba(255,255,255,.06);color:var(--muted);font-size:.82rem}.console-row:last-child{border-bottom:0}.console-row strong{color:#fff}.section{padding:106px 0;position:relative}.section-head{display:flex;justify-content:space-between;gap:30px;align-items:flex-end;margin-bottom:44px}.section-head h2{font-size:clamp(2.2rem,4.7vw,4.8rem);letter-spacing:-.055em;max-width:850px}.section-head p{max-width:430px;color:var(--muted)}.card{border:1px solid var(--line2);background:var(--panel);backdrop-filter:blur(24px);border-radius:28px;box-shadow:0 22px 80px rgba(0,0,0,.22)}.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:26px}.story{padding:34px}.story p{color:var(--soft);margin-top:16px}.facts{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.fact{padding:28px;min-height:170px;position:relative;overflow:hidden}.fact:after{content:"";position:absolute;width:150px;height:150px;border-radius:50%;right:-70px;top:-60px;background:linear-gradient(135deg,var(--cyan),var(--violet));opacity:.14}.fact .num{font-size:2.4rem;font-weight:900;font-family:"Space Grotesk",sans-serif}.fact .label{color:var(--muted);margin-top:8px;font-size:.9rem}.timeline{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:28px}.step{padding:26px}.step span{color:var(--cyan);font-weight:800}.step h3{font-size:1.2rem;margin:10px 0}.step p{color:var(--muted);font-size:.93rem}.model-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.model-card{padding:30px;min-height:250px}.icon{width:52px;height:52px;border-radius:16px;background:linear-gradient(135deg,rgba(0,212,255,.2),rgba(109,40,217,.2));border:1px solid var(--line);display:grid;place-items:center;font-weight:900;color:var(--cyan);margin-bottom:22px}.model-card p{color:var(--muted);margin-top:12px}.leadership-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.leader{overflow:hidden;position:relative}.leader img{width:100%;aspect-ratio:1/1.08;object-fit:cover;background:#07101d}.leader-body{padding:24px}.leader-body h3{font-size:1.35rem}.leader-body .role{color:var(--cyan);font-size:.84rem;letter-spacing:.08em;text-transform:uppercase;margin:7px 0 12px}.leader-body p{color:var(--muted);font-size:.92rem}.demo-tag{position:absolute;top:16px;left:16px;z-index:2;background:rgba(2,5,9,.72);backdrop-filter:blur(10px);border:1px solid var(--line);color:#9ff2ff;border-radius:999px;padding:6px 10px;font-size:.62rem;letter-spacing:.1em;text-transform:uppercase}.visual-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.visual{overflow:hidden;min-height:260px}.visual img{width:100%;height:200px;object-fit:cover}.visual-body{padding:18px}.visual-body h3{font-size:1rem}.visual-body p{color:var(--muted);font-size:.83rem;margin-top:6px}.services{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.service{padding:24px;min-height:178px}.service h3{font-size:1.08rem}.service p{color:var(--muted);font-size:.9rem;margin-top:10px}.marquee-wrap{overflow:hidden;border:1px solid var(--line2);border-radius:28px;background:rgba(255,255,255,.035);padding:22px 0;position:relative}.marquee{display:flex;width:max-content;animation:scroll 28s linear infinite}.logo-pill{height:68px;min-width:190px;margin:0 10px;border-radius:22px;display:flex;align-items:center;gap:12px;padding:0 18px;background:linear-gradient(135deg,rgba(0,212,255,.16),rgba(109,40,217,.14));border:1px solid rgba(255,255,255,.1);font-family:"Space Grotesk",sans-serif;font-weight:800}.logo-icon{width:38px;height:38px;border-radius:12px;background:var(--g);display:grid;place-items:center;box-shadow:0 0 22px rgba(0,212,255,.18)}.logo-name small{display:block;color:var(--muted);font-family:Inter,sans-serif;font-weight:500;font-size:.68rem;margin-top:1px}@keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}.note{margin-top:14px;color:var(--muted);font-size:.86rem}.industries{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}.industry{padding:18px;border-radius:18px;border:1px solid var(--line2);background:rgba(255,255,255,.035);color:var(--soft);text-align:center;font-weight:700}.values{display:grid;grid-template-columns:repeat(5,1fr);gap:18px}.value{padding:24px}.value h3{font-size:1.05rem}.value p{color:var(--muted);font-size:.88rem;margin-top:8px}.contact{padding:60px;border-radius:34px;background:radial-gradient(circle at 18% 20%,rgba(0,212,255,.22),transparent 35%),radial-gradient(circle at 80% 0,rgba(109,40,217,.26),transparent 38%),rgba(6,12,24,.82);border:1px solid var(--line)}.contact-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:38px;align-items:center}.contact h2{font-size:clamp(2.2rem,4.6vw,4.7rem);letter-spacing:-.055em}.contact p{color:var(--soft);margin-top:16px}.contact-list{display:grid;gap:14px}.contact-item{padding:18px;border:1px solid var(--line2);background:rgba(255,255,255,.04);border-radius:18px}.contact-item span{display:block;color:var(--muted);font-size:.76rem;text-transform:uppercase;letter-spacing:.11em;margin-bottom:4px}.footer{padding:44px 0;color:var(--muted);border-top:1px solid var(--line2);margin-top:90px}.footer-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.fade-up{opacity:0;transform:translateY(24px);transition:opacity .8s ease, transform .8s ease}.fade-up.visible{opacity:1;transform:translateY(0)}
-    @media (max-width:980px){.hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}.leadership-grid,.model-grid{grid-template-columns:repeat(2,1fr)}.visual-grid,.services{grid-template-columns:repeat(2,1fr)}.timeline,.values,.industries{grid-template-columns:repeat(2,1fr)}.section-head{display:block}.section-head p{margin-top:16px}.nav-links{display:none}.hero-card{min-height:480px}}
-    @media (max-width:620px){.wrap{width:min(92vw,1180px)}.hero{padding-top:118px}.hero-actions{display:grid}.btn{justify-content:center}.leadership-grid,.model-grid,.visual-grid,.services,.facts,.timeline,.values,.industries{grid-template-columns:1fr}.contact{padding:34px 22px}.footer-inner{display:block}.hero-card{min-height:420px}.logo-pill{min-width:160px}.nav-inner{height:70px}.nav-cta{display:none}}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="About Enterprium — AI-powered software house headquartered in San Francisco. Meet our leadership, learn our story, and discover why 250+ enterprises choose us.">
+<title>About Us — Enterprium | Engineering the Intelligent Enterprise</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --white:#fff;--bg:#f8f9fb;--bg2:#f1f4f8;
+  --border:#e5e7eb;--border2:#d1d5db;
+  --text:#0d0f12;--muted:#6b7280;--muted2:#374151;
+  --green:#16a34a;--gl:#dcfce7;--gm:#bbf7d0;--gd:#15803d;
+  --navy:#0f172a;--cyan:#0891b2;--violet:#7c3aed;
+  --font:'Inter',system-ui,sans-serif;
+  --r:10px;--rl:16px;--rxl:24px;
+  --sh:0 1px 3px rgba(0,0,0,.07),0 1px 2px rgba(0,0,0,.05);
+  --shm:0 4px 16px rgba(0,0,0,.08),0 2px 6px rgba(0,0,0,.04);
+  --shl:0 20px 60px rgba(0,0,0,.1),0 8px 24px rgba(0,0,0,.06);
+  --tr:.22s cubic-bezier(.4,0,.2,1);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--font);background:var(--bg);color:var(--text);line-height:1.6;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+.eyebrow{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--green);background:var(--gl);border:1px solid var(--gm);padding:4px 13px;border-radius:100px;margin-bottom:18px}
+.eyebrow::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--green);animation:blink 2s infinite;flex-shrink:0}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.25}}
+h1{font-size:clamp(2.4rem,5.5vw,4rem);font-weight:800;line-height:1.07;letter-spacing:-.038em}
+h2{font-size:clamp(1.7rem,3.5vw,2.7rem);font-weight:700;line-height:1.14;letter-spacing:-.026em}
+h3{font-size:1.08rem;font-weight:600;line-height:1.4}
+p{color:var(--muted);line-height:1.78}
+strong{color:var(--muted2);font-weight:600}
+.sh{text-align:center;max-width:640px;margin:0 auto 64px}
+.sh p{font-size:1rem;margin-top:14px}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+section{padding:96px 0}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 22px;border-radius:var(--r);font-size:14px;font-weight:600;cursor:pointer;transition:all var(--tr);border:none;line-height:1}
+.btn-g{background:var(--green);color:#fff}
+.btn-g:hover{background:var(--gd);transform:translateY(-1px);box-shadow:0 4px 20px rgba(22,163,74,.3)}
+.btn-o{background:transparent;color:var(--text);border:1.5px solid var(--border2)}
+.btn-o:hover{border-color:var(--text)}
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:200;height:64px;display:flex;align-items:center;padding:0 24px;background:rgba(255,255,255,.9);backdrop-filter:blur(16px);border-bottom:1px solid var(--border)}
+.ni{max-width:1160px;margin:0 auto;width:100%;display:flex;align-items:center;justify-content:space-between;gap:32px}
+.logo{font-size:1.18rem;font-weight:800;letter-spacing:-.04em}
+.logo span{color:var(--green)}
+.nl{display:flex;align-items:center;gap:28px}
+.nl a{font-size:14px;color:var(--muted);font-weight:500;transition:color var(--tr)}
+.nl a:hover,.nl a.act{color:var(--green)}
+.nr{display:flex;gap:8px}
+.hbg{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
+.hbg span{display:block;width:20px;height:2px;background:var(--muted);border-radius:2px}
+.mm{display:none;position:fixed;inset:0;top:64px;background:#fff;z-index:199;flex-direction:column;padding:28px 24px;gap:0}
+.mm.open{display:flex}
+.mm a{font-size:1rem;font-weight:500;color:var(--muted2);padding:14px 0;border-bottom:1px solid var(--border)}
+.mm a:hover{color:var(--green)}
+/* HERO */
+#hero{padding:130px 0 80px;background:#fff;position:relative;overflow:hidden}
+.hgrid{position:absolute;inset:0;background-image:linear-gradient(var(--border) 1px,transparent 1px),linear-gradient(90deg,var(--border) 1px,transparent 1px);background-size:56px 56px;opacity:.35;pointer-events:none}
+.hfade{position:absolute;inset:0;background:radial-gradient(ellipse 70% 55% at 50% 0%,rgba(220,252,231,.7) 0%,transparent 70%);pointer-events:none}
+.hi{text-align:center;max-width:780px;margin:0 auto;position:relative;z-index:1}
+.hi h1 em{font-style:normal;color:var(--green)}
+.hi>p{font-size:1.06rem;max-width:560px;margin:16px auto 36px}
+.hcta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:56px}
+/* building card */
+.bcard{border-radius:var(--rxl);overflow:hidden;border:1px solid var(--border);box-shadow:var(--shl);max-width:860px;margin:0 auto}
+.bimg{height:360px;position:relative;overflow:hidden}
+.bimg svg{position:absolute;inset:0;width:100%;height:100%}
+.bover{position:absolute;bottom:0;left:0;right:0;z-index:2;padding:24px 28px;background:linear-gradient(0deg,rgba(15,23,42,.85) 0%,transparent 100%);display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.blbl{color:rgba(255,255,255,.9);font-size:13px;font-weight:600}
+.baddr{color:rgba(255,255,255,.6);font-size:12px;margin-top:3px}
+.bbadge{background:rgba(22,163,74,.9);color:#fff;font-size:11px;font-weight:700;padding:4px 12px;border-radius:100px;letter-spacing:.04em;white-space:nowrap}
+/* STORY */
+#story{background:#fff}
+.sgrid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.scopy p{margin-bottom:20px}
+.scopy p:last-child{margin-bottom:0}
+.ocard{border-radius:var(--rl);overflow:hidden;border:1px solid var(--border);box-shadow:var(--shm);position:relative}
+.ovis{height:380px;position:relative;overflow:hidden}
+.ovis svg{position:absolute;inset:0;width:100%;height:100%}
+.olbl{position:absolute;bottom:14px;left:14px;font-size:11px;font-weight:600;color:var(--muted);background:rgba(255,255,255,.88);padding:4px 10px;border-radius:6px;border:1px solid var(--border)}
+/* MVV */
+#mvv{background:var(--bg)}
+.mvvg{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.mc{background:#fff;border:1.5px solid var(--border);border-radius:var(--rl);padding:36px 32px;transition:all var(--tr)}
+.mc:hover{border-color:var(--gm);transform:translateY(-3px);box-shadow:var(--shm)}
+.mc .mi{font-size:2.2rem;margin-bottom:18px}
+.mc h3{margin-bottom:12px;font-size:1.15rem}
+.mc p{font-size:14px}
+/* VALUES */
+#values{background:#fff}
+.vlst{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.vi{background:var(--bg);border:1.5px solid var(--border);border-radius:var(--rl);padding:28px;display:flex;gap:16px;align-items:flex-start;transition:all var(--tr)}
+.vi:hover{border-color:var(--gm);background:var(--gl)}
+.vn{font-size:11px;font-weight:800;color:var(--green);letter-spacing:.06em;padding-top:4px;flex-shrink:0;min-width:28px}
+.vb h3{margin-bottom:8px;font-size:14.5px}
+.vb p{font-size:13.5px}
+/* REVEAL */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .6s ease,transform .6s ease}
+.reveal.vis{opacity:1;transform:none}
+/* responsive */
+@media(max-width:900px){.nl,.nr{display:none}.hbg{display:flex}.sgrid{grid-template-columns:1fr}.mvvg{grid-template-columns:1fr}.vlst{grid-template-columns:1fr}}
+@media(max-width:600px){section{padding:68px 0}h1{font-size:2.1rem}}
+</style>
 </head>
 <body>
-  <div class="orb one"></div><div class="orb two"></div><div class="orb three"></div><div class="grain"></div>
-  <div class="site">
-    <nav class="nav">
-      <div class="wrap nav-inner">
-        <a href="#hero" class="brand"><span class="brand-mark"><span>E</span></span><span>Enterprium</span></a>
-        <div class="nav-links"><a href="#about">About</a><a href="#leadership">Leadership</a><a href="#workspace">Workspace</a><a href="#services">Services</a><a href="#contact">Contact</a></div>
-        <a class="nav-cta" href="mailto:contact@enterprium.com">contact@enterprium.com</a>
-      </div>
-    </nav>
+<nav>
+  <div class="ni">
+    <a href="index.html" class="logo">Enterp<span>ium</span></a>
+    <ul class="nl">
+      <li><a href="#story">Our Story</a></li>
+      <li><a href="#leadership">Leadership</a></li>
+      <li><a href="#sf">San Francisco</a></li>
+      <li><a href="#clients">Clients</a></li>
+    </ul>
+    <div class="nr">
+      <a href="index.html#services" class="btn btn-o">Services</a>
+      <a href="#cta" class="btn btn-g">Get Started →</a>
+    </div>
+    <div class="hbg" onclick="toggleMob()"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+<div class="mm" id="mm">
+  <a href="#story" onclick="toggleMob()">Our Story</a>
+  <a href="#leadership" onclick="toggleMob()">Leadership</a>
+  <a href="#sf" onclick="toggleMob()">San Francisco</a>
+  <a href="#clients" onclick="toggleMob()">Clients</a>
+  <a href="#cta" onclick="toggleMob()" style="margin-top:16px" class="btn btn-g">Get Started →</a>
+</div>
 
-    <header class="hero" id="hero">
-      <div class="wrap hero-grid">
-        <div>
-          <span class="eyebrow"><span class="dot"></span> AI-powered software house</span>
-          <h1>Engineering the <span class="grad">Intelligent Enterprise.</span></h1>
-          <p>Enterprium helps organizations modernize operations through human-led AI engineering, intelligent automation, custom software, CRM platforms, e-commerce systems, dashboards, cloud solutions, and business-ready digital transformation.</p>
-          <div class="hero-actions"><a class="btn primary" href="#about">Explore About Us</a><a class="btn secondary" href="#leadership">Meet Leadership</a></div>
+<section id="hero">
+  <div class="hgrid"></div><div class="hfade"></div>
+  <div class="wrap">
+    <div class="hi">
+      <div class="eyebrow">About Enterprium</div>
+      <h1>Engineering the<br><em>Intelligent Enterprise.</em></h1>
+      <p>A premium AI-powered software house headquartered in San Francisco — building the intelligent systems, automation workflows, and enterprise platforms that define how modern businesses operate, scale, and compete.</p>
+      <div class="hcta">
+        <a href="#cta" class="btn btn-g" style="font-size:15px;padding:13px 28px">Start a Project →</a>
+        <a href="#leadership" class="btn btn-o" style="font-size:15px;padding:13px 28px">Meet the Team ↓</a>
+      </div>
+      <div class="bcard">
+        <div class="bimg">
+          <img src="https://sfyimby.com/wp-content/uploads/2025/04/995-Market-Street-image-via-Google-Street-View.jpg" alt="995 Market Street, Frontier Tower, San Francisco — photo via Google Street View" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top"/>
+          <div class="bover">
+            <div><div class="blbl">Frontier Tower · 995 Market Street</div><div class="baddr">San Francisco, CA 94103, United States</div></div>
+            <div class="bbadge">SF PRESENCE</div>
+          </div>
         </div>
-        <div class="hero-card card" aria-label="AI delivery model visual">
-          <div class="node-map">
-            <svg viewBox="0 0 520 520" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M92 260C92 167.2 167.2 92 260 92s168 75.2 168 168-75.2 168-168 168S92 352.8 92 260Z" stroke="#00d4ff" stroke-opacity=".28"/>
-              <path d="M160 170l200 180M360 170L160 350M260 84v352M84 260h352" stroke="#6d28d9" stroke-opacity=".24"/>
-              <circle cx="260" cy="260" r="70" fill="#00d4ff" fill-opacity=".08" stroke="#00d4ff" stroke-opacity=".44"/>
-              <g fill="#00d4ff"><circle cx="260" cy="92" r="7"/><circle cx="428" cy="260" r="7"/><circle cx="260" cy="428" r="7"/><circle cx="92" cy="260" r="7"/><circle cx="160" cy="170" r="7"/><circle cx="360" cy="170" r="7"/><circle cx="360" cy="350" r="7"/><circle cx="160" cy="350" r="7"/></g>
-              <text x="260" y="254" text-anchor="middle" fill="#fff" font-family="Space Grotesk" font-size="28" font-weight="800">AI</text>
-              <text x="260" y="284" text-anchor="middle" fill="#8eeeff" font-family="Inter" font-size="13">Human supervised delivery</text>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="story">
+  <div class="wrap">
+    <div class="sgrid">
+      <div class="scopy reveal">
+        <div class="eyebrow">Our Story</div>
+        <h2>Built at the intersection of AI and enterprise ambition.</h2>
+        <p style="margin-top:20px">Enterprium was founded on a clear conviction: the gap between enterprise ambition and technology execution is too wide, and too costly, to ignore. Most businesses are not short of ideas — they are short of the engineering capability, the AI expertise, and the delivery infrastructure to turn those ideas into production-grade systems that actually work at scale.</p>
+        <p>Starting from a founding team of engineers, architects, and AI specialists with years inside large enterprise technology programs, we built a delivery model designed for the modern era — combining the depth of a senior engineering firm with the agility of a technology startup.</p>
+        <p>Today, Enterprium operates as an <strong>AI-powered virtual software house</strong> with a business presence in San Francisco, California — delivering intelligent systems, web platforms, automation workflows, CRM solutions, dashboards, and custom enterprise software to clients across 12+ countries.</p>
+        <p>Our delivery is <strong>human-supervised and AI-accelerated</strong>. Every project is guided by senior engineers and architects. Every output is reviewed, tested, and built to enterprise standards.</p>
+      </div>
+      <div class="ocard reveal" style="transition-delay:.15s">
+        <div class="ovis">
+          <img src="https://sfyimby.com/wp-content/uploads/2025/04/995-Market-Street-office-interior-view-image-via-Frontier-Tower.jpg" alt="995 Market Street office interior — Frontier Tower, San Francisco" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center"/>
+          <div class="olbl">Frontier Tower, 995 Market St · San Francisco</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="mvv">
+  <div class="wrap">
+    <div class="sh reveal"><div class="eyebrow">What drives us</div><h2>Mission, Vision &amp; Values</h2><p>The principles behind every project, every team decision, and every line of code we ship.</p></div>
+    <div class="mvvg">
+      <div class="mc reveal"><div class="mi">🎯</div><h3>Our Mission</h3><p>To make world-class AI engineering and digital transformation accessible to every ambitious enterprise — regardless of size, geography, or technical maturity. We turn complex technology challenges into scalable, production-ready solutions.</p></div>
+      <div class="mc reveal" style="transition-delay:.1s"><div class="mi">🔭</div><h3>Our Vision</h3><p>To be the most trusted AI engineering partner for enterprises navigating digital transformation — known not just for what we build, but for how reliably and responsibly we build it, every time.</p></div>
+      <div class="mc reveal" style="transition-delay:.2s"><div class="mi">⚖️</div><h3>Our Values</h3><p>Engineering excellence. Radical transparency. Human-led, AI-accelerated delivery. Client success as the only real metric. Security and privacy by design — foundational to every project, from day one.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="values" style="padding-top:0">
+  <div class="wrap">
+    <div class="vlst">
+      <div class="vi reveal"><div class="vn">01</div><div class="vb"><h3>Engineering excellence above all</h3><p>Every system is designed for performance, security, and long-term maintainability — held to the same standards we apply to a Fortune 500 engagement.</p></div></div>
+      <div class="vi reveal" style="transition-delay:.08s"><div class="vn">02</div><div class="vb"><h3>Radical transparency</h3><p>No hidden costs. No scope surprises. No technical jargon used to obscure bad decisions. Clear, honest communication at every stage.</p></div></div>
+      <div class="vi reveal" style="transition-delay:.12s"><div class="vn">03</div><div class="vb"><h3>Human-led, AI-accelerated</h3><p>AI amplifies great engineers — it does not replace their judgment, accountability, and creativity. Every project has a senior human lead.</p></div></div>
+      <div class="vi reveal" style="transition-delay:.16s"><div class="vn">04</div><div class="vb"><h3>Client success is the only metric</h3><p>We do not measure success by hours billed or lines written. We measure it by whether clients achieve the outcomes they engaged us to deliver.</p></div></div>
+      <div class="vi reveal" style="transition-delay:.2s"><div class="vn">05</div><div class="vb"><h3>Security and privacy by design</h3><p>Data privacy, security architecture, and compliance are foundational requirements on every project — not optional afterthoughts.</p></div></div>
+      <div class="vi reveal" style="transition-delay:.24s"><div class="vn">06</div><div class="vb"><h3>Post-launch partnership</h3><p>We do not disappear at go-live. Ongoing support, monitoring, continuous improvement, and scaling roadmaps are default, not premium.</p></div></div>
+    </div>
+  </div>
+</section>
+<!-- ══════════════ LEADERSHIP ══════════════ -->
+<style>
+/* LEADERSHIP */
+#leadership{background:var(--bg)}
+.lgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.lc{background:#fff;border:1.5px solid var(--border);border-radius:var(--rl);overflow:hidden;transition:all var(--tr);opacity:0;transform:translateY(28px)}
+.lc.vis{animation:slideUp .55s ease forwards}
+@keyframes slideUp{to{opacity:1;transform:translateY(0)}}
+.lc:hover{border-color:var(--gm);transform:translateY(-4px)!important;box-shadow:var(--shm)}
+.lphoto{height:230px;position:relative;overflow:hidden}
+.lavatar{width:100%;height:100%;display:flex;align-items:center;justify-content:center;position:relative}
+.linfo{padding:20px 22px}
+.linfo h3{font-size:16px;margin-bottom:4px}
+.ltitle{font-size:12px;font-weight:700;color:var(--green);text-transform:uppercase;letter-spacing:.06em;margin-bottom:12px}
+.lbio{font-size:13px;color:var(--muted);line-height:1.7}
+.lnote{display:inline-block;margin-top:12px;font-size:10.5px;color:var(--muted);background:var(--bg);border:1px solid var(--border);padding:2px 8px;border-radius:4px}
+/* OFFICES */
+#offices{background:#fff}
+.ogrid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.olarge{grid-column:span 2}
+.otile{border-radius:var(--rl);overflow:hidden;border:1px solid var(--border);box-shadow:var(--sh);position:relative;opacity:0;transform:translateY(24px)}
+.otile.vis{animation:slideUp .5s ease forwards}
+.timg{display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative}
+.timg.h240{height:240px}
+.timg.h300{height:300px}
+.timg.h200{height:200px}
+.timg svg{position:absolute;inset:0;width:100%;height:100%}
+.tcap{position:absolute;bottom:0;left:0;right:0;padding:12px 16px;background:linear-gradient(0deg,rgba(15,23,42,.75) 0%,transparent 100%);color:#fff;font-size:11.5px;font-weight:600}
+.tpill{display:inline-block;background:rgba(22,163,74,.85);color:#fff;font-size:10px;font-weight:700;padding:2px 8px;border-radius:100px;letter-spacing:.04em;margin-bottom:4px;margin-right:4px}
+/* SF */
+#sf{background:var(--navy);position:relative;overflow:hidden;padding:80px 0}
+.sfglow{position:absolute;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(8,145,178,.15) 0%,transparent 70%);top:-150px;right:-100px;pointer-events:none}
+.sfgrid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;position:relative;z-index:1}
+.sfcopy h2{color:#fff;margin-bottom:16px}
+.sfcopy p{color:rgba(255,255,255,.65);margin-bottom:20px}
+.sfcontact{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:var(--rl);padding:24px 28px;margin-top:24px}
+.sfrow{display:flex;align-items:flex-start;gap:12px;margin-bottom:14px}
+.sfrow:last-child{margin-bottom:0}
+.sficon{font-size:16px;flex-shrink:0;margin-top:2px}
+.sftxt .slbl{font-size:11px;font-weight:700;color:rgba(255,255,255,.45);text-transform:uppercase;letter-spacing:.07em;margin-bottom:2px}
+.sftxt .sval{font-size:14px;color:rgba(255,255,255,.9);font-weight:500}
+.sfmap{border-radius:var(--rl);overflow:hidden;border:1px solid rgba(255,255,255,.12);height:340px;position:relative}
+.sfmap svg{width:100%;height:100%}
+/* WHY */
+#why{background:var(--bg)}
+.wgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.wc{background:#fff;border:1.5px solid var(--border);border-radius:var(--rl);padding:28px;transition:all var(--tr)}
+.wc:hover{border-color:var(--gm);box-shadow:var(--shm)}
+.wc .wi{font-size:1.8rem;margin-bottom:14px}
+.wc h3{margin-bottom:10px;font-size:15px}
+.wc p{font-size:13px}
+/* STATS */
+#gstats{background:#fff}
+.sblks{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border);border:1px solid var(--border);border-radius:var(--rxl);overflow:hidden}
+.sb{background:#fff;padding:44px 32px;text-align:center;transition:background var(--tr)}
+.sb:hover{background:var(--gl)}
+.snum{font-size:2.9rem;font-weight:800;letter-spacing:-.05em;line-height:1;margin-bottom:6px}
+.snum span{color:var(--green)}
+.slbl2{font-size:13px;color:var(--muted);font-weight:500}
+/* LOGOS */
+#clients{background:var(--bg);padding:96px 0}
+.mtrack{overflow:hidden;-webkit-mask:linear-gradient(90deg,transparent,var(--bg) 8%,var(--bg) 92%,transparent);mask:linear-gradient(90deg,transparent,var(--bg) 8%,var(--bg) 92%,transparent)}
+.mrow{display:flex;width:max-content}
+.mr1{animation:marq1 34s linear infinite}
+.mr2{animation:marq2 28s linear infinite;margin-top:12px}
+.mr1:hover,.mr2:hover{animation-play-state:paused}
+@keyframes marq1{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes marq2{from{transform:translateX(-50%)}to{transform:translateX(0)}}
+.lchip{display:flex;align-items:center;padding:10px 22px;border-right:1px solid var(--border);background:#fff;min-width:140px;justify-content:center;height:56px;transition:background var(--tr)}
+.lchip:hover{background:var(--gl)}
+.lchip svg{height:20px;max-width:110px}
+/* CTA */
+#cta{background:var(--text);padding:88px 0;position:relative;overflow:hidden}
+.ctabg{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);background-size:48px 48px}
+.ctagl{position:absolute;width:700px;height:700px;border-radius:50%;background:radial-gradient(circle,rgba(22,163,74,.18) 0%,transparent 70%);top:-300px;left:50%;transform:translateX(-50%)}
+.ctai{text-align:center;position:relative;z-index:1;max-width:580px;margin:0 auto}
+.ctai h2{color:#fff;margin-bottom:16px}
+.ctai p{color:rgba(255,255,255,.6);margin-bottom:36px}
+.ctabtns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+/* FOOTER */
+footer{background:#fff;border-top:1px solid var(--border);padding:56px 0 28px}
+.ftg{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;margin-bottom:44px}
+.flogo{font-size:1.2rem;font-weight:800;letter-spacing:-.04em;margin-bottom:14px;display:inline-block}
+.flogo span{color:var(--green)}
+.fb p{font-size:13px;max-width:240px}
+.fcol h4{font-size:11.5px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);margin-bottom:16px}
+.fcol li{margin-bottom:9px}
+.fcol a{font-size:13px;color:var(--muted);transition:color var(--tr)}
+.fcol a:hover{color:var(--green)}
+.fbot{border-top:1px solid var(--border);padding-top:22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.fbot p{font-size:12px;color:var(--muted)}
+.socs{display:flex;gap:8px}
+.socb{width:34px;height:34px;border-radius:8px;background:var(--bg);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;color:var(--muted);transition:all var(--tr)}
+.socb:hover{background:var(--green);color:#fff;border-color:var(--green)}
+/* RESPONSIVE */
+@media(max-width:1000px){.lgrid{grid-template-columns:1fr 1fr}}
+@media(max-width:900px){.ogrid{grid-template-columns:1fr}.olarge{grid-column:1}.wgrid{grid-template-columns:1fr}.sfgrid{grid-template-columns:1fr}.sblks{grid-template-columns:1fr 1fr}.ftg{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.lgrid{grid-template-columns:1fr}.sblks{grid-template-columns:1fr 1fr}.ftg{grid-template-columns:1fr}}
+</style>
+
+<section id="leadership">
+  <div class="wrap">
+    <div class="sh reveal">
+      <div class="eyebrow">Leadership</div>
+      <h2>The team behind the mission.</h2>
+      <p>Experienced engineers, operators, and product leaders united by a single purpose: build technology that genuinely transforms how enterprises operate.</p>
+    </div>
+    <div class="lgrid">
+
+      <!-- JAMES MILLER — CEO -->
+      <div class="lc" style="animation-delay:.05s">
+        <div class="lphoto">
+          <div class="lavatar" style="background:linear-gradient(150deg,#1a2e4a 0%,#243c60 60%,#1a2e4a 100%)">
+            <svg viewBox="0 0 280 230" xmlns="http://www.w3.org/2000/svg" width="280" height="230">
+              <defs>
+                <radialGradient id="jm_bg" cx="50%" cy="30%" r="75%"><stop offset="0%" stop-color="#2a4a6e"/><stop offset="100%" stop-color="#0d1e30"/></radialGradient>
+                <radialGradient id="jm_sk" cx="50%" cy="40%" r="60%"><stop offset="0%" stop-color="#d4956a"/><stop offset="100%" stop-color="#b87848"/></radialGradient>
+              </defs>
+              <rect width="280" height="230" fill="url(#jm_bg)"/>
+              <!-- shoulders / jacket dark navy -->
+              <path d="M20 230 Q45 165 80 153 L93 147 L140 178 L187 147 L200 153 Q235 165 260 230Z" fill="#14202e"/>
+              <!-- white shirt collar -->
+              <path d="M112 150 L140 167 L168 150 L163 172 L140 178 L117 172Z" fill="#e8eef5"/>
+              <!-- subtle tie -->
+              <path d="M136 153 L140 168 L144 153 L142 148 L138 148Z" fill="#1a3a6e"/>
+              <!-- neck -->
+              <rect x="122" y="133" width="36" height="20" rx="8" fill="#c08558"/>
+              <!-- head shape — oval, male, slightly wide jaw -->
+              <ellipse cx="140" cy="98" rx="44" ry="50" fill="url(#jm_sk)"/>
+              <!-- hair: dark brown going grey at temples, side parted, receding slightly — 50s exec -->
+              <path d="M96 82 Q96 54 140 54 Q184 54 184 82 Q179 60 160 57 Q149 54 140 55 Q131 54 120 57 Q101 60 96 82Z" fill="#2c2218"/>
+              <!-- grey temples -->
+              <path d="M96 82 Q97 70 102 63 Q100 74 97 85Z" fill="#8a7e72"/>
+              <path d="M184 82 Q183 70 178 63 Q180 74 183 85Z" fill="#8a7e72"/>
+              <!-- grey streaks top -->
+              <path d="M120 56 Q130 53 140 55 Q150 53 160 56" fill="none" stroke="rgba(180,175,165,.25)" stroke-width="1.5"/>
+              <!-- forehead line (50+) -->
+              <path d="M112 82 Q140 78 168 82" fill="none" stroke="rgba(0,0,0,.07)" stroke-width="0.9"/>
+              <!-- eyebrows strong, some grey -->
+              <path d="M113 91 Q121 88 129 91" fill="none" stroke="#2c2218" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M151 91 Q159 88 167 91" fill="none" stroke="#2c2218" stroke-width="2.5" stroke-linecap="round"/>
+              <!-- eye sockets slight shadow -->
+              <ellipse cx="121" cy="100" rx="11" ry="7" fill="rgba(0,0,0,.06)"/>
+              <ellipse cx="159" cy="100" rx="11" ry="7" fill="rgba(0,0,0,.06)"/>
+              <!-- eyes whites -->
+              <ellipse cx="121" cy="99" rx="8" ry="5" fill="#f0ece8"/>
+              <ellipse cx="159" cy="99" rx="8" ry="5" fill="#f0ece8"/>
+              <!-- irises — dark hazel -->
+              <circle cx="121" cy="99" r="4.5" fill="#3a2a14"/>
+              <circle cx="159" cy="99" r="4.5" fill="#3a2a14"/>
+              <!-- pupils -->
+              <circle cx="121.5" cy="98.5" r="2" fill="#0d0800"/>
+              <circle cx="159.5" cy="98.5" r="2" fill="#0d0800"/>
+              <!-- catchlights -->
+              <circle cx="122.5" cy="97.5" r=".85" fill="rgba(255,255,255,.75)"/>
+              <circle cx="160.5" cy="97.5" r=".85" fill="rgba(255,255,255,.75)"/>
+              <!-- crow's feet very subtle -->
+              <path d="M110 96 Q108 98 109 100" fill="none" stroke="rgba(0,0,0,.09)" stroke-width="0.7"/>
+              <path d="M132 96 Q134 98 133 100" fill="none" stroke="rgba(0,0,0,.09)" stroke-width="0.7"/>
+              <path d="M148 96 Q146 98 147 100" fill="none" stroke="rgba(0,0,0,.09)" stroke-width="0.7"/>
+              <path d="M170 96 Q172 98 171 100" fill="none" stroke="rgba(0,0,0,.09)" stroke-width="0.7"/>
+              <!-- nose bridge -->
+              <path d="M135 104 Q133 113 135 120 Q140 123 145 120 Q147 113 145 104" fill="none" stroke="rgba(0,0,0,.14)" stroke-width="1.2" stroke-linecap="round"/>
+              <!-- nasolabial folds (50+) -->
+              <path d="M114 112 Q110 118 112 124" fill="none" stroke="rgba(0,0,0,.1)" stroke-width="0.9"/>
+              <path d="M166 112 Q170 118 168 124" fill="none" stroke="rgba(0,0,0,.1)" stroke-width="0.9"/>
+              <!-- slight smile -->
+              <path d="M124 126 Q140 133 156 126" fill="none" stroke="#9a6040" stroke-width="2" stroke-linecap="round"/>
+              <path d="M126 126 Q140 130 154 126" fill="#c8805a" opacity=".3"/>
+              <!-- ears -->
+              <ellipse cx="96" cy="103" rx="5.5" ry="9" fill="#bf7e50"/>
+              <ellipse cx="184" cy="103" rx="5.5" ry="9" fill="#bf7e50"/>
+              <!-- jaw definition -->
+              <path d="M98 118 Q104 138 140 144 Q176 138 182 118" fill="#b87040" opacity=".3"/>
+              <!-- slight chin shadow -->
+              <ellipse cx="140" cy="140" rx="20" ry="6" fill="rgba(0,0,0,.1)"/>
             </svg>
           </div>
-          <div class="console">
-            <div class="console-row"><span>Model</span><strong>AI + human oversight</strong></div>
-            <div class="console-row"><span>Location</span><strong>San Francisco presence</strong></div>
-            <div class="console-row"><span>Delivery</span><strong>Global digital teams</strong></div>
-            <div class="console-row"><span>Focus</span><strong>Software, automation, cloud, data</strong></div>
+        </div>
+        <div class="linfo">
+          <h3>James Miller</h3>
+          <div class="ltitle">Chief Executive Officer</div>
+          <p class="lbio">15+ years scaling enterprise technology businesses across the US, Europe, and Asia Pacific. Previously led digital transformation programs for Fortune 500 clients, combining technical depth with commercial clarity.</p>
+          <span class="lnote">⚠ Placeholder portrait — replace with approved photo</span>
+        </div>
+      </div>
+
+      <!-- SARAH MITCHELL — CTO -->
+      <div class="lc" style="animation-delay:.1s">
+        <div class="lphoto">
+          <div class="lavatar" style="background:linear-gradient(150deg,#0e2e42 0%,#1a4860 60%,#0e2e42 100%)">
+            <svg viewBox="0 0 280 230" xmlns="http://www.w3.org/2000/svg" width="280" height="230">
+              <defs>
+                <radialGradient id="sm_bg" cx="50%" cy="30%" r="75%"><stop offset="0%" stop-color="#1a4860"/><stop offset="100%" stop-color="#081826"/></radialGradient>
+                <radialGradient id="sm_sk" cx="50%" cy="40%" r="60%"><stop offset="0%" stop-color="#e2b090"/><stop offset="100%" stop-color="#ca9070"/></radialGradient>
+              </defs>
+              <rect width="280" height="230" fill="url(#sm_bg)"/>
+              <!-- blazer dark charcoal -->
+              <path d="M18 230 Q42 164 76 152 L90 146 L140 172 L190 146 L204 152 Q238 164 262 230Z" fill="#1c1c2c"/>
+              <!-- blouse -->
+              <path d="M110 148 L140 164 L170 148 L165 170 L140 176 L115 170Z" fill="#f0f4ff"/>
+              <!-- neck -->
+              <rect x="122" y="131" width="36" height="20" rx="8" fill="#d0a880"/>
+              <!-- head oval — slightly narrower, female -->
+              <ellipse cx="140" cy="96" rx="42" ry="49" fill="url(#sm_sk)"/>
+              <!-- hair: dark brown, shoulder length, blow dry style, greying gracefully at roots (50s) -->
+              <path d="M98 80 Q98 52 140 52 Q182 52 182 80 Q178 56 162 53 Q150 50 140 51 Q130 50 118 53 Q102 56 98 80Z" fill="#1e1610"/>
+              <!-- hair sides flowing down (shoulder length) -->
+              <path d="M98 80 Q92 96 90 116 Q91 132 95 140 Q89 122 91 100Z" fill="#1e1610"/>
+              <path d="M182 80 Q188 96 190 116 Q189 132 185 140 Q191 122 189 100Z" fill="#1e1610"/>
+              <!-- warm highlight strands -->
+              <path d="M100 82 Q98 94 99 106" fill="none" stroke="#5a3a1a" stroke-width="2" opacity=".5"/>
+              <path d="M180 82 Q182 94 181 106" fill="none" stroke="#5a3a1a" stroke-width="2" opacity=".5"/>
+              <!-- silver at temples (50+) -->
+              <path d="M99 84 Q100 73 104 66" fill="none" stroke="rgba(200,195,188,.6)" stroke-width="1.8"/>
+              <path d="M181 84 Q180 73 176 66" fill="none" stroke="rgba(200,195,188,.6)" stroke-width="1.8"/>
+              <!-- eyebrows arched, some grey -->
+              <path d="M113 88 Q121 85 129 88" fill="none" stroke="#1e1410" stroke-width="2" stroke-linecap="round"/>
+              <path d="M151 88 Q159 85 167 88" fill="none" stroke="#1e1410" stroke-width="2" stroke-linecap="round"/>
+              <!-- eyes — green/hazel, intelligent, slight corner lines -->
+              <ellipse cx="121" cy="97" rx="8" ry="5" fill="#f0ece8"/>
+              <ellipse cx="159" cy="97" rx="8" ry="5" fill="#f0ece8"/>
+              <circle cx="121" cy="97" r="4.5" fill="#3a5a2a"/>
+              <circle cx="159" cy="97" r="4.5" fill="#3a5a2a"/>
+              <circle cx="121.5" cy="96.5" r="2" fill="#0d1408"/>
+              <circle cx="159.5" cy="96.5" r="2" fill="#0d1408"/>
+              <circle cx="122.5" cy="95.8" r=".85" fill="rgba(255,255,255,.78)"/>
+              <circle cx="160.5" cy="95.8" r=".85" fill="rgba(255,255,255,.78)"/>
+              <!-- outer corner crinkles -->
+              <path d="M113 94 Q111 96 112 98" fill="none" stroke="rgba(0,0,0,.09)" stroke-width="0.7"/>
+              <path d="M129 94 Q131 96 130 98" fill="none" stroke="rgba(0,0,0,.09)" stroke-width="0.7"/>
+              <path d="M150 94 Q148 96 149 98" fill="none" stroke="rgba(0,0,0,.09)" stroke-width="0.7"/>
+              <path d="M167 94 Q169 96 168 98" fill="none" stroke="rgba(0,0,0,.09)" stroke-width="0.7"/>
+              <!-- nose fine -->
+              <path d="M136 102 Q134 111 136 118 Q140 120 144 118 Q146 111 144 102" fill="none" stroke="rgba(0,0,0,.12)" stroke-width="1" stroke-linecap="round"/>
+              <!-- nasolabial (50+) -->
+              <path d="M114 110 Q110 116 112 121" fill="none" stroke="rgba(0,0,0,.08)" stroke-width="0.8"/>
+              <path d="M166 110 Q170 116 168 121" fill="none" stroke="rgba(0,0,0,.08)" stroke-width="0.8"/>
+              <!-- mouth, warm -->
+              <path d="M124 123 Q140 130 156 123" fill="none" stroke="#aa7050" stroke-width="1.8" stroke-linecap="round"/>
+              <!-- subtle blush -->
+              <ellipse cx="112" cy="108" rx="9" ry="5" fill="rgba(200,100,80,.1)"/>
+              <ellipse cx="168" cy="108" rx="9" ry="5" fill="rgba(200,100,80,.1)"/>
+              <!-- ears + small earrings -->
+              <ellipse cx="98" cy="100" rx="5" ry="8" fill="#cca078"/>
+              <circle cx="98" cy="106" r="2.5" fill="#c8a82a"/>
+              <ellipse cx="182" cy="100" rx="5" ry="8" fill="#cca078"/>
+              <circle cx="182" cy="106" r="2.5" fill="#c8a82a"/>
+            </svg>
+          </div>
+        </div>
+        <div class="linfo">
+          <h3>Sarah Mitchell</h3>
+          <div class="ltitle">Chief Technology Officer</div>
+          <p class="lbio">Deep expertise in distributed systems, cloud infrastructure, and applied ML. Leads Enterprium's AI agent platform, automation frameworks, and cloud delivery infrastructure. CS background with a decade of enterprise-scale shipping.</p>
+          <span class="lnote">⚠ Placeholder portrait — replace with approved photo</span>
+        </div>
+      </div>
+
+      <!-- DAVID ANDERSON — CFO -->
+      <div class="lc" style="animation-delay:.15s">
+        <div class="lphoto">
+          <div class="lavatar" style="background:linear-gradient(150deg,#181e2a 0%,#263040 60%,#181e2a 100%)">
+            <svg viewBox="0 0 280 230" xmlns="http://www.w3.org/2000/svg" width="280" height="230">
+              <defs>
+                <radialGradient id="da_bg" cx="50%" cy="30%" r="75%"><stop offset="0%" stop-color="#263040"/><stop offset="100%" stop-color="#0e1218"/></radialGradient>
+                <radialGradient id="da_sk" cx="50%" cy="40%" r="60%"><stop offset="0%" stop-color="#c8905a"/><stop offset="100%" stop-color="#a87040"/></radialGradient>
+              </defs>
+              <rect width="280" height="230" fill="url(#da_bg)"/>
+              <!-- dark suit -->
+              <path d="M18 230 Q44 165 78 153 L92 147 L140 175 L188 147 L202 153 Q236 165 262 230Z" fill="#0e1622"/>
+              <!-- shirt + tie -->
+              <path d="M111 149 L140 164 L169 149 L164 171 L140 177 L116 171Z" fill="#eef0f6"/>
+              <path d="M136 152 L140 166 L144 152 L142 147 L138 147Z" fill="#1a3a7a"/>
+              <!-- neck -->
+              <rect x="122" y="132" width="36" height="20" rx="8" fill="#b87848"/>
+              <!-- head: slightly square jaw, male 50s -->
+              <ellipse cx="140" cy="97" rx="44" ry="50" fill="url(#da_sk)"/>
+              <!-- hair: salt-and-pepper, short, receding slightly at temples -->
+              <path d="M96 80 Q96 54 140 54 Q184 54 184 80 Q180 58 162 55 Q150 52 140 53 Q130 52 118 55 Q100 58 96 80Z" fill="#302820"/>
+              <!-- salt-and-pepper texture at top -->
+              <path d="M116 56 Q128 53 140 54 Q152 53 164 56" fill="none" stroke="rgba(220,215,205,.35)" stroke-width="1.8"/>
+              <path d="M110 62 Q120 58 130 57" fill="none" stroke="rgba(220,215,205,.3)" stroke-width="1.5"/>
+              <path d="M150 57 Q160 58 170 62" fill="none" stroke="rgba(220,215,205,.3)" stroke-width="1.5"/>
+              <!-- receding at temples -->
+              <path d="M96 80 Q98 68 103 62" fill="none" stroke="#302820" stroke-width="1"/>
+              <path d="M184 80 Q182 68 177 62" fill="none" stroke="#302820" stroke-width="1"/>
+              <!-- grey temples pronounced -->
+              <path d="M97 80 Q98 70 102 63" fill="none" stroke="rgba(200,195,188,.65)" stroke-width="2"/>
+              <path d="M183 80 Q182 70 178 63" fill="none" stroke="rgba(200,195,188,.65)" stroke-width="2"/>
+              <!-- two forehead lines (50+) -->
+              <path d="M108 80 Q140 76 172 80" fill="none" stroke="rgba(0,0,0,.07)" stroke-width="0.9"/>
+              <path d="M111 86 Q140 82 169 86" fill="none" stroke="rgba(0,0,0,.06)" stroke-width="0.8"/>
+              <!-- eyebrows: heavy, dark-greying -->
+              <path d="M112 91 Q121 88 130 91" fill="none" stroke="#201810" stroke-width="2.8" stroke-linecap="round"/>
+              <path d="M150 91 Q159 88 168 91" fill="none" stroke="#201810" stroke-width="2.8" stroke-linecap="round"/>
+              <!-- grey in brows -->
+              <path d="M126 89.5 Q128 88 130 89.5" fill="none" stroke="rgba(190,185,175,.5)" stroke-width="1.1"/>
+              <path d="M166 89.5 Q168 88 168 89.5" fill="none" stroke="rgba(190,185,175,.5)" stroke-width="1.1"/>
+              <!-- eyes: steady, direct, dark brown -->
+              <ellipse cx="121" cy="100" rx="8.5" ry="5.2" fill="#f0ece8"/>
+              <ellipse cx="159" cy="100" rx="8.5" ry="5.2" fill="#f0ece8"/>
+              <circle cx="121" cy="100" r="5" fill="#241808"/>
+              <circle cx="159" cy="100" r="5" fill="#241808"/>
+              <circle cx="121.5" cy="99.5" r="2.2" fill="#080400"/>
+              <circle cx="159.5" cy="99.5" r="2.2" fill="#080400"/>
+              <circle cx="122.5" cy="98.5" r=".9" fill="rgba(255,255,255,.75)"/>
+              <circle cx="160.5" cy="98.5" r=".9" fill="rgba(255,255,255,.75)"/>
+              <!-- under-eye slight bags (50+) -->
+              <path d="M113 103 Q121 104.5 129 103" fill="none" stroke="rgba(0,0,0,.08)" stroke-width="0.8"/>
+              <path d="M151 103 Q159 104.5 167 103" fill="none" stroke="rgba(0,0,0,.08)" stroke-width="0.8"/>
+              <!-- nose: strong, straight bridge -->
+              <path d="M136 105 Q134 115 136 122 Q140 125 144 122 Q146 115 144 105" fill="none" stroke="rgba(0,0,0,.15)" stroke-width="1.3" stroke-linecap="round"/>
+              <!-- nasolabial -->
+              <path d="M113 113 Q109 119 111 125" fill="none" stroke="rgba(0,0,0,.1)" stroke-width="0.9"/>
+              <path d="M167 113 Q171 119 169 125" fill="none" stroke="rgba(0,0,0,.1)" stroke-width="0.9"/>
+              <!-- composed mouth, no smile -->
+              <path d="M124 128 Q140 134 156 128" fill="none" stroke="#8a5030" stroke-width="1.8" stroke-linecap="round"/>
+              <!-- cheekbone definition -->
+              <path d="M97 112 Q100 117 98 122" fill="none" stroke="rgba(0,0,0,.06)" stroke-width="0.9"/>
+              <path d="M183 112 Q180 117 182 122" fill="none" stroke="rgba(0,0,0,.06)" stroke-width="0.9"/>
+              <!-- ears -->
+              <ellipse cx="96" cy="104" rx="5.5" ry="9" fill="#b87848"/>
+              <ellipse cx="184" cy="104" rx="5.5" ry="9" fill="#b87848"/>
+            </svg>
+          </div>
+        </div>
+        <div class="linfo">
+          <h3>David Anderson</h3>
+          <div class="ltitle">Chief Financial Officer</div>
+          <p class="lbio">Corporate finance background combined with technology venture investment experience. Brings rigorous financial discipline to complex multi-market engagements. Ensures every project is scoped and priced with full transparency.</p>
+          <span class="lnote">⚠ Placeholder portrait — replace with approved photo</span>
+        </div>
+      </div>
+
+      <!-- RACHEL MORGAN — COO -->
+      <div class="lc" style="animation-delay:.2s">
+        <div class="lphoto">
+          <div class="lavatar" style="background:linear-gradient(150deg,#162028 0%,#243848 60%,#162028 100%)">
+            <svg viewBox="0 0 280 230" xmlns="http://www.w3.org/2000/svg" width="280" height="230">
+              <defs>
+                <radialGradient id="rm_bg" cx="50%" cy="30%" r="75%"><stop offset="0%" stop-color="#243848"/><stop offset="100%" stop-color="#0c1820"/></radialGradient>
+                <radialGradient id="rm_sk" cx="50%" cy="40%" r="60%"><stop offset="0%" stop-color="#dca882"/><stop offset="100%" stop-color="#c08862"/></radialGradient>
+              </defs>
+              <rect width="280" height="230" fill="url(#rm_bg)"/>
+              <!-- charcoal blazer -->
+              <path d="M18 230 Q42 163 76 151 L90 145 L140 172 L190 145 L204 151 Q238 163 262 230Z" fill="#1e2430"/>
+              <!-- cream blouse -->
+              <path d="M110 147 L140 163 L170 147 L165 169 L140 175 L115 169Z" fill="#f5ede0"/>
+              <!-- necklace thin chain -->
+              <path d="M120 156 Q140 163 160 156" fill="none" stroke="#c8a828" stroke-width="1.3" stroke-linecap="round"/>
+              <circle cx="140" cy="163" r="1.8" fill="#c8a828"/>
+              <!-- neck -->
+              <rect x="122" y="130" width="36" height="20" rx="8" fill="#cca070"/>
+              <!-- head female oval -->
+              <ellipse cx="140" cy="95" rx="42" ry="49" fill="url(#rm_sk)"/>
+              <!-- hair: warm dark brown, shoulder-length, layered, greying at temples (50s) -->
+              <path d="M98 78 Q98 51 140 51 Q182 51 182 78 Q178 55 162 52 Q150 49 140 50 Q130 49 118 52 Q102 55 98 78Z" fill="#221408"/>
+              <!-- hair sides -->
+              <path d="M98 78 Q91 95 90 114 Q91 130 95 138 Q88 120 90 98Z" fill="#221408"/>
+              <path d="M182 78 Q189 95 190 114 Q189 130 185 138 Q192 120 190 98Z" fill="#221408"/>
+              <!-- warm auburn highlights -->
+              <path d="M101 80 Q99 92 100 104" fill="none" stroke="#6a2e0a" stroke-width="2.5" opacity=".55"/>
+              <path d="M179 80 Q181 92 180 104" fill="none" stroke="#6a2e0a" stroke-width="2.5" opacity=".55"/>
+              <!-- silver grey (50+) at temples prominently -->
+              <path d="M99 80 Q100 68 105 62" fill="none" stroke="rgba(215,210,200,.65)" stroke-width="2"/>
+              <path d="M181 80 Q180 68 175 62" fill="none" stroke="rgba(215,210,200,.65)" stroke-width="2"/>
+              <path d="M108 56 Q120 52 132 54" fill="none" stroke="rgba(215,210,200,.35)" stroke-width="1.5"/>
+              <!-- eyebrows: defined, dark, slight arch -->
+              <path d="M113 86 Q121 83 129 86" fill="none" stroke="#1c1008" stroke-width="2.1" stroke-linecap="round"/>
+              <path d="M151 86 Q159 83 167 86" fill="none" stroke="#1c1008" stroke-width="2.1" stroke-linecap="round"/>
+              <!-- eyes: warm brown, determined -->
+              <ellipse cx="121" cy="95" rx="8" ry="5" fill="#f0ece8"/>
+              <ellipse cx="159" cy="95" rx="8" ry="5" fill="#f0ece8"/>
+              <circle cx="121" cy="95" r="4.5" fill="#5a2e10"/>
+              <circle cx="159" cy="95" r="4.5" fill="#5a2e10"/>
+              <circle cx="121.5" cy="94.5" r="2" fill="#160800"/>
+              <circle cx="159.5" cy="94.5" r="2" fill="#160800"/>
+              <circle cx="122.5" cy="93.8" r=".82" fill="rgba(255,255,255,.76)"/>
+              <circle cx="160.5" cy="93.8" r=".82" fill="rgba(255,255,255,.76)"/>
+              <!-- outer corner crinkles -->
+              <path d="M113 92 Q111 94 112 96" fill="none" stroke="rgba(0,0,0,.09)" stroke-width="0.7"/>
+              <path d="M167 92 Q169 94 168 96" fill="none" stroke="rgba(0,0,0,.09)" stroke-width="0.7"/>
+              <!-- nose -->
+              <path d="M136 100 Q134 109 136 116 Q140 118 144 116 Q146 109 144 100" fill="none" stroke="rgba(0,0,0,.12)" stroke-width="1.1" stroke-linecap="round"/>
+              <!-- nasolabial (50+) -->
+              <path d="M113 108 Q109 114 111 119" fill="none" stroke="rgba(0,0,0,.09)" stroke-width="0.8"/>
+              <path d="M167 108 Q171 114 169 119" fill="none" stroke="rgba(0,0,0,.09)" stroke-width="0.8"/>
+              <!-- warm confident smile -->
+              <path d="M123 121 Q140 129 157 121" fill="none" stroke="#9a6040" stroke-width="1.9" stroke-linecap="round"/>
+              <!-- subtle blush -->
+              <ellipse cx="112" cy="106" rx="9" ry="5.5" fill="rgba(210,100,80,.11)"/>
+              <ellipse cx="168" cy="106" rx="9" ry="5.5" fill="rgba(210,100,80,.11)"/>
+              <!-- ears + drop earrings -->
+              <ellipse cx="98" cy="98" rx="5" ry="8" fill="#c09060"/>
+              <circle cx="98" cy="103" r="2" fill="#c8a828"/>
+              <line x1="98" y1="105" x2="98" y2="113" stroke="#c8a828" stroke-width="1.5"/>
+              <circle cx="98" cy="114" r="2.5" fill="#c8a828"/>
+              <ellipse cx="182" cy="98" rx="5" ry="8" fill="#c09060"/>
+              <circle cx="182" cy="103" r="2" fill="#c8a828"/>
+              <line x1="182" y1="105" x2="182" y2="113" stroke="#c8a828" stroke-width="1.5"/>
+              <circle cx="182" cy="114" r="2.5" fill="#c8a828"/>
+            </svg>
+          </div>
+        </div>
+        <div class="linfo">
+          <h3>Rachel Morgan</h3>
+          <div class="ltitle">Chief Operating Officer</div>
+          <p class="lbio">Previously led delivery operations at a global technology consultancy overseeing $100M+ programs. Owns Enterprium's delivery infrastructure, QA standards, project staffing, and client communication across 12+ countries.</p>
+          <span class="lnote">⚠ Placeholder portrait — replace with approved photo</span>
+        </div>
+      </div>
+
+      <!-- MICHAEL CARTER — Head of AI Engineering -->
+      <div class="lc" style="animation-delay:.25s">
+        <div class="lphoto">
+          <div class="lavatar" style="background:linear-gradient(150deg,#0e1420 0%,#1a2438 60%,#0e1420 100%)">
+            <svg viewBox="0 0 280 230" xmlns="http://www.w3.org/2000/svg" width="280" height="230">
+              <defs>
+                <radialGradient id="mc_bg" cx="50%" cy="30%" r="75%"><stop offset="0%" stop-color="#1a2438"/><stop offset="100%" stop-color="#080c14"/></radialGradient>
+                <radialGradient id="mc_sk" cx="50%" cy="40%" r="60%"><stop offset="0%" stop-color="#a86c38"/><stop offset="100%" stop-color="#8a5020"/></radialGradient>
+              </defs>
+              <rect width="280" height="230" fill="url(#mc_bg)"/>
+              <!-- dark tech blazer / smart hoodie -->
+              <path d="M20 230 Q46 164 80 152 L93 146 L140 174 L187 146 L200 152 Q234 164 260 230Z" fill="#121a24"/>
+              <!-- subtle collar line -->
+              <path d="M90 146 Q115 156 140 164 Q165 156 190 146" fill="none" stroke="rgba(255,255,255,.07)" stroke-width="1.5"/>
+              <!-- neck -->
+              <rect x="122" y="132" width="36" height="20" rx="8" fill="#906030"/>
+              <!-- head: slightly broader face, male -->
+              <ellipse cx="140" cy="98" rx="43" ry="49" fill="url(#mc_sk)"/>
+              <!-- hair: short/close-cropped dark, grey at temples, hint of curls texture (50+) -->
+              <path d="M97 82 Q97 56 140 56 Q183 56 183 82 Q179 60 162 57 Q150 54 140 55 Q130 54 118 57 Q101 60 97 82Z" fill="#18100a"/>
+              <!-- curl texture -->
+              <path d="M100 68 Q108 61 118 58" fill="none" stroke="rgba(50,35,20,.6)" stroke-width="1.2"/>
+              <path d="M162 58 Q172 61 180 68" fill="none" stroke="rgba(50,35,20,.6)" stroke-width="1.2"/>
+              <path d="M118 56 Q130 53 142 55" fill="none" stroke="rgba(50,35,20,.5)" stroke-width="1"/>
+              <!-- grey temples (50+) pronounced -->
+              <path d="M97 82 Q98 71 103 64" fill="none" stroke="rgba(185,180,170,.6)" stroke-width="2"/>
+              <path d="M183 82 Q182 71 177 64" fill="none" stroke="rgba(185,180,170,.6)" stroke-width="2"/>
+              <!-- eyebrows: strong, arched intelligence -->
+              <path d="M112 90 Q121 87 130 91" fill="none" stroke="#100c08" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M150 91 Q159 87 168 90" fill="none" stroke="#100c08" stroke-width="2.5" stroke-linecap="round"/>
+              <!-- eyes: intense dark brown focus -->
+              <ellipse cx="121" cy="100" rx="8" ry="5.2" fill="#f0ece6"/>
+              <ellipse cx="159" cy="100" rx="8" ry="5.2" fill="#f0ece6"/>
+              <circle cx="121" cy="100" r="4.8" fill="#1e1008"/>
+              <circle cx="159" cy="100" r="4.8" fill="#1e1008"/>
+              <circle cx="121.5" cy="99.5" r="2.2" fill="#000"/>
+              <circle cx="159.5" cy="99.5" r="2.2" fill="#000"/>
+              <circle cx="122.5" cy="98.6" r=".88" fill="rgba(255,255,255,.76)"/>
+              <circle cx="160.5" cy="98.6" r=".88" fill="rgba(255,255,255,.76)"/>
+              <!-- slight forehead line -->
+              <path d="M110 84 Q140 80 170 84" fill="none" stroke="rgba(0,0,0,.08)" stroke-width="0.8"/>
+              <!-- nose: broad, defined -->
+              <path d="M134 104 Q132 114 134 121 Q140 124 146 121 Q148 114 146 104" fill="none" stroke="rgba(0,0,0,.16)" stroke-width="1.3" stroke-linecap="round"/>
+              <!-- nasolabial -->
+              <path d="M112 112 Q108 118 110 124" fill="none" stroke="rgba(0,0,0,.1)" stroke-width="0.9"/>
+              <path d="M168 112 Q172 118 170 124" fill="none" stroke="rgba(0,0,0,.1)" stroke-width="0.9"/>
+              <!-- trim beard (50s) subtle shadow -->
+              <path d="M110 122 Q111 134 120 138 Q140 143 160 138 Q169 134 170 122" fill="rgba(18,12,5,.28)"/>
+              <!-- mouth slight confident set -->
+              <path d="M123 124 Q140 131 157 124" fill="none" stroke="#704820" stroke-width="1.7" stroke-linecap="round"/>
+              <!-- ears -->
+              <ellipse cx="97" cy="103" rx="5.5" ry="9" fill="#906030"/>
+              <ellipse cx="183" cy="103" rx="5.5" ry="9" fill="#906030"/>
+              <!-- faint screen-glow tint -->
+              <ellipse cx="140" cy="98" rx="44" ry="50" fill="rgba(8,145,178,.04)"/>
+            </svg>
+          </div>
+        </div>
+        <div class="linfo">
+          <h3>Michael Carter</h3>
+          <div class="ltitle">Head of AI Engineering</div>
+          <p class="lbio">Research background in NLP and reinforcement learning, with production AI delivery across finance, healthcare, and logistics. Bridges the gap between AI research and enterprise-grade engineering reality.</p>
+          <span class="lnote">⚠ Placeholder portrait — replace with approved photo</span>
+        </div>
+      </div>
+
+      <!-- EMILY PARKER — Head of Product Design -->
+      <div class="lc" style="animation-delay:.3s">
+        <div class="lphoto">
+          <div class="lavatar" style="background:linear-gradient(150deg,#201630 0%,#30204a 60%,#201630 100%)">
+            <svg viewBox="0 0 280 230" xmlns="http://www.w3.org/2000/svg" width="280" height="230">
+              <defs>
+                <radialGradient id="ep_bg" cx="50%" cy="30%" r="75%"><stop offset="0%" stop-color="#30204a"/><stop offset="100%" stop-color="#120e20"/></radialGradient>
+                <radialGradient id="ep_sk" cx="50%" cy="40%" r="60%"><stop offset="0%" stop-color="#e8c0a0"/><stop offset="100%" stop-color="#d0a080"/></radialGradient>
+              </defs>
+              <rect width="280" height="230" fill="url(#ep_bg)"/>
+              <!-- smart turtleneck top — design-forward -->
+              <path d="M18 230 Q42 163 76 151 L90 145 L140 170 L190 145 L204 151 Q238 163 262 230Z" fill="#1e1430"/>
+              <!-- turtleneck fold -->
+              <path d="M113 145 Q127 153 140 157 Q153 153 167 145 Q153 149 140 152 Q127 149 113 145Z" fill="#28183c"/>
+              <!-- neck -->
+              <rect x="123" y="129" width="34" height="20" rx="8" fill="#cca080"/>
+              <!-- head: fine oval, female -->
+              <ellipse cx="140" cy="94" rx="41" ry="48" fill="url(#ep_sk)"/>
+              <!-- hair: warm auburn/chestnut with silver threads, shoulder length, side swept (50+) -->
+              <path d="M99 77 Q99 50 140 50 Q181 50 181 77 Q177 53 161 50 Q149 47 140 48 Q131 47 119 50 Q103 53 99 77Z" fill="#5c2808"/>
+              <!-- hair volume side sweep -->
+              <path d="M99 77 Q92 92 90 112 Q91 130 95 138 Q87 118 89 96Z" fill="#5c2808"/>
+              <path d="M181 77 Q188 92 190 112 Q189 130 185 138 Q193 118 191 96Z" fill="#4e2206"/>
+              <!-- caramel highlights -->
+              <path d="M102 80 Q100 92 101 104" fill="none" stroke="#c07040" stroke-width="2.8" opacity=".55"/>
+              <path d="M113 53 Q122 49 132 51" fill="none" stroke="#c07040" stroke-width="2" opacity=".4"/>
+              <!-- silver/white at temples and roots (50+) -->
+              <path d="M100 78 Q101 67 106 60" fill="none" stroke="rgba(225,220,212,.7)" stroke-width="2"/>
+              <path d="M180 78 Q179 67 174 60" fill="none" stroke="rgba(225,220,212,.7)" stroke-width="2"/>
+              <path d="M128 50 Q140 47 152 50" fill="none" stroke="rgba(225,220,212,.45)" stroke-width="1.8"/>
+              <!-- eyebrows arched creative -->
+              <path d="M112 85 Q121 81 129 85" fill="none" stroke="#2c1408" stroke-width="1.9" stroke-linecap="round"/>
+              <path d="M151 85 Q159 81 167 85" fill="none" stroke="#2c1408" stroke-width="1.9" stroke-linecap="round"/>
+              <!-- eyes: warm hazel/amber, expressive, corner crinkles -->
+              <ellipse cx="121" cy="93" rx="8" ry="5.2" fill="#f0ece8"/>
+              <ellipse cx="159" cy="93" rx="8" ry="5.2" fill="#f0ece8"/>
+              <circle cx="121" cy="93" r="4.8" fill="#6a3e10"/>
+              <circle cx="159" cy="93" r="4.8" fill="#6a3e10"/>
+              <circle cx="121.5" cy="92.5" r="2.1" fill="#281000"/>
+              <circle cx="159.5" cy="92.5" r="2.1" fill="#281000"/>
+              <circle cx="122.5" cy="91.7" r=".85" fill="rgba(255,255,255,.78)"/>
+              <circle cx="160.5" cy="91.7" r=".85" fill="rgba(255,255,255,.78)"/>
+              <!-- outer crinkles expressive -->
+              <path d="M113 90 Q111 92 112 94" fill="none" stroke="rgba(0,0,0,.09)" stroke-width="0.7"/>
+              <path d="M129 90 Q131 92 130 94" fill="none" stroke="rgba(0,0,0,.09)" stroke-width="0.7"/>
+              <path d="M150 90 Q148 92 149 94" fill="none" stroke="rgba(0,0,0,.09)" stroke-width="0.7"/>
+              <path d="M167 90 Q169 92 168 94" fill="none" stroke="rgba(0,0,0,.09)" stroke-width="0.7"/>
+              <!-- nasolabial (50+) -->
+              <path d="M113 103 Q109 109 111 114" fill="none" stroke="rgba(0,0,0,.08)" stroke-width="0.7"/>
+              <path d="M167 103 Q171 109 169 114" fill="none" stroke="rgba(0,0,0,.08)" stroke-width="0.7"/>
+              <!-- nose -->
+              <path d="M136 98 Q134 107 136 114 Q140 116 144 114 Q146 107 144 98" fill="none" stroke="rgba(0,0,0,.11)" stroke-width="1" stroke-linecap="round"/>
+              <!-- warm expressive mouth -->
+              <path d="M123 117 Q140 125 157 117" fill="none" stroke="#b07050" stroke-width="1.9" stroke-linecap="round"/>
+              <!-- subtle lip colour -->
+              <path d="M125 117 Q140 121 155 117 Q140 119 125 117Z" fill="rgba(180,80,60,.22)"/>
+              <!-- blush -->
+              <ellipse cx="112" cy="104" rx="9" ry="5.5" fill="rgba(220,110,90,.12)"/>
+              <ellipse cx="168" cy="104" rx="9" ry="5.5" fill="rgba(220,110,90,.12)"/>
+              <!-- ears + geometric violet earrings (design-forward) -->
+              <ellipse cx="99" cy="96" rx="5" ry="8" fill="#c8a080"/>
+              <rect x="96" y="102" width="6" height="9" rx="3" fill="#7c3aed"/>
+              <ellipse cx="181" cy="96" rx="5" ry="8" fill="#c8a080"/>
+              <rect x="178" y="102" width="6" height="9" rx="3" fill="#7c3aed"/>
+            </svg>
+          </div>
+        </div>
+        <div class="linfo">
+          <h3>Emily Parker</h3>
+          <div class="ltitle">Head of Product Design</div>
+          <p class="lbio">MFA in Interaction Design. Previously led product design at two enterprise SaaS companies. Believes enterprise software should be as well-designed as consumer products — drives UX strategy and design systems across all client projects.</p>
+          <span class="lnote">⚠ Placeholder portrait — replace with approved photo</span>
+        </div>
+      </div>
+
+    </div><!-- /lgrid -->
+    <p style="text-align:center;font-size:12px;color:var(--muted);margin-top:24px;background:var(--bg);border:1px solid var(--border);border-radius:var(--r);padding:10px 20px;display:inline-block;position:relative;left:50%;transform:translateX(-50%)">⚠ All leadership names and portraits above are placeholder/demo content. Replace with real approved executive profiles before live publication.</p>
+  </div>
+</section>
+
+<!-- ══════════════ OFFICE GALLERY ══════════════ -->
+<section id="offices">
+  <div class="wrap">
+    <div class="sh reveal">
+      <div class="eyebrow">Our Workspace</div>
+      <h2>Where intelligence gets built.</h2>
+      <p>Modern, collaborative, and purpose-built for high-performance technology delivery.</p>
+    </div>
+    <div class="ogrid">
+      <!-- Large panoramic dev workspace -->
+      <div class="otile olarge" style="animation-delay:.05s">
+        <div class="timg h300">
+          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&q=85&fit=crop" alt="Tech engineering team working collaboratively" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center"/>
+          <div class="tcap"><div class="tpill">AI ENGINEERING</div>AI engineering team workspace · Global delivery team</div>
+        </div>
+      </div>
+      <!-- Meeting room -->
+      <div class="otile" style="animation-delay:.1s">
+        <div class="timg h240">
+          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=85&fit=crop" alt="Modern executive meeting room" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center"/>
+          <div class="tcap"><div class="tpill">COLLABORATION</div>Executive meeting room · Concept workspace visual</div>
+        </div>
+      </div>
+      <!-- Dashboard ops room -->
+      <div class="otile" style="animation-delay:.15s">
+        <div class="timg h240">
+          <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=85&fit=crop" alt="Technology dashboard monitoring room" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center"/>
+          <div class="tcap"><div class="tpill">OPERATIONS</div>Dashboard monitoring room · Modern digital delivery environment</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ SF SECTION ══════════════ -->
+<section id="sf">
+  <div class="sfglow"></div>
+  <div class="wrap">
+    <div class="sfgrid">
+      <div class="sfcopy">
+        <div class="eyebrow" style="background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.18);color:#a7f3d0">Our Location</div>
+        <h2>Based in San Francisco.<br>Delivering globally.</h2>
+        <p>Enterprium's business presence is anchored at 995 Market Street — Frontier Tower — in San Francisco's mid-Market technology corridor, steps from the Powell Street BART station and surrounded by some of the city's most innovative companies.</p>
+        <p>The 16-story tower features exposed brick walls, natural wood, and expansive common areas where teams collaborate — a workspace environment that reflects Enterprium's ethos: premium, purposeful, and built for people who do serious work.</p>
+        <p>Our delivery has no geographic boundary — we operate across 12+ countries with a single quality standard everywhere.</p>
+        <div class="sfcontact">
+          <div class="sfrow">
+            <span class="sficon">📍</span>
+            <div class="sftxt">
+              <div class="slbl">Business Address</div>
+              <div class="sval">995 Market St, Frontier Tower<br>San Francisco, CA 94103, United States</div>
+            </div>
+          </div>
+          <div class="sfrow">
+            <span class="sficon">✉️</span>
+            <div class="sftxt">
+              <div class="slbl">Email</div>
+              <div class="sval"><a href="mailto:contact@enterprium.com" style="color:#a7f3d0">contact@enterprium.com</a></div>
+            </div>
           </div>
         </div>
       </div>
-    </header>
-
-    <main>
-      <section class="section" id="about">
-        <div class="wrap">
-          <div class="section-head fade-up">
-            <div><span class="pill"><span class="dot"></span> About Enterprium</span><h2>Built to help businesses move from manual work to intelligent digital systems.</h2></div>
-            <p>Enterprium is positioned as a premium AI-powered software house with a San Francisco business presence and a flexible global delivery network.</p>
-          </div>
-          <div class="about-grid">
-            <article class="card story fade-up">
-              <h3>Where Enterprium Started</h3>
-              <p>Enterprium started with a clear purpose: to help startups, small businesses, and growing companies compete in a digital-first economy. Many organizations still operate with disconnected tools, offline processes, limited customer visibility, and manual reporting. Enterprium was created to solve those problems through practical digital systems.</p>
-              <p>Our work focuses on websites, web apps, CRM systems, e-commerce platforms, dashboards, AI automation, cloud solutions, and custom software that helps teams work faster and make better decisions.</p>
-              <p>We combine experienced human leadership with AI-assisted workflows, so strategy, communication, quality control, and final approval remain supervised while execution becomes faster and more scalable.</p>
-            </article>
-            <div class="facts">
-              <div class="card fact fade-up"><div class="num grad">SF</div><div class="label">San Francisco business presence at 995 Market St, San Francisco, CA 94103, United States</div></div>
-              <div class="card fact fade-up"><div class="num grad">AI</div><div class="label">AI-powered virtual software-house delivery model with human supervision</div></div>
-              <div class="card fact fade-up"><div class="num grad">360°</div><div class="label">Websites, apps, automation, data, cloud, CRM, e-commerce, and dashboards</div></div>
-              <div class="card fact fade-up"><div class="num grad">Global</div><div class="label">Remote delivery capability for clients across multiple regions and industries</div></div>
-            </div>
-          </div>
-          <div class="timeline">
-            <div class="card step fade-up"><span>01</span><h3>Discover</h3><p>We understand the business model, customers, goals, processes, risks, and required outcomes.</p></div>
-            <div class="card step fade-up"><span>02</span><h3>Architect</h3><p>We design the right technical foundation, UX structure, data flow, and delivery roadmap.</p></div>
-            <div class="card step fade-up"><span>03</span><h3>Build</h3><p>Specialist AI-assisted teams support design, frontend, backend, data, automation, cloud, and QA.</p></div>
-            <div class="card step fade-up"><span>04</span><h3>Improve</h3><p>Human experts review quality, security, performance, business fit, and long-term scalability.</p></div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="model">
-        <div class="wrap">
-          <div class="section-head fade-up"><div><span class="pill"><span class="dot"></span> Delivery Model</span><h2>AI-powered execution, human-led responsibility.</h2></div><p>Our virtual software-house model is designed for speed, structure, and professional oversight.</p></div>
-          <div class="model-grid">
-            <div class="card model-card fade-up"><div class="icon">01</div><h3>Human-Led Strategy</h3><p>Business leaders, analysts, engineers, and designers guide decisions, client communication, architecture, governance, and final approval.</p></div>
-            <div class="card model-card fade-up"><div class="icon">02</div><h3>AI-Assisted Execution</h3><p>AI workflows support research, content, UI planning, code assistance, documentation, testing, and operational acceleration.</p></div>
-            <div class="card model-card fade-up"><div class="icon">03</div><h3>Quality-Controlled Delivery</h3><p>Every solution is reviewed for business fit, security, usability, responsiveness, performance, and maintainability.</p></div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="leadership">
-        <div class="wrap">
-          <div class="section-head fade-up"><div><span class="pill"><span class="dot"></span> Leadership</span><h2>Premium leadership section with demo executive profiles.</h2></div><p>These names and portraits are placeholder/demo content and should be replaced with approved real leadership details before public launch.</p></div>
-          <div class="leadership-grid">
-            <article class="card leader fade-up"><span class="demo-tag">Demo profile</span><img src="assets/visuals/james-miller.svg" alt="Fictional placeholder portrait for James Miller"><div class="leader-body"><h3>James Miller</h3><div class="role">Chief Executive Officer</div><p>Leads company vision, growth strategy, client partnerships, and long-term digital transformation direction.</p></div></article>
-            <article class="card leader fade-up"><span class="demo-tag">Demo profile</span><img src="assets/visuals/sarah-mitchell.svg" alt="Fictional placeholder portrait for Sarah Mitchell"><div class="leader-body"><h3>Sarah Mitchell</h3><div class="role">Chief Technology Officer</div><p>Guides technology strategy, software architecture, AI systems, cloud platforms, and engineering standards.</p></div></article>
-            <article class="card leader fade-up"><span class="demo-tag">Demo profile</span><img src="assets/visuals/david-anderson.svg" alt="Fictional placeholder portrait for David Anderson"><div class="leader-body"><h3>David Anderson</h3><div class="role">Chief Financial Officer</div><p>Supports financial planning, sustainable growth, pricing discipline, investment control, and operational reporting.</p></div></article>
-            <article class="card leader fade-up"><span class="demo-tag">Demo profile</span><img src="assets/visuals/rachel-morgan.svg" alt="Fictional placeholder portrait for Rachel Morgan"><div class="leader-body"><h3>Rachel Morgan</h3><div class="role">Chief Operating Officer</div><p>Oversees delivery operations, team coordination, project governance, performance standards, and client service quality.</p></div></article>
-            <article class="card leader fade-up"><span class="demo-tag">Demo profile</span><img src="assets/visuals/michael-carter.svg" alt="Fictional placeholder portrait for Michael Carter"><div class="leader-body"><h3>Michael Carter</h3><div class="role">Head of AI Engineering</div><p>Leads AI automation, agent workflows, intelligent systems, model integration, and AI delivery enablement.</p></div></article>
-            <article class="card leader fade-up"><span class="demo-tag">Demo profile</span><img src="assets/visuals/emily-parker.svg" alt="Fictional placeholder portrait for Emily Parker"><div class="leader-body"><h3>Emily Parker</h3><div class="role">Head of Product Design</div><p>Directs product experience, UI systems, brand consistency, design quality, usability, and conversion-focused layouts.</p></div></article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="workspace">
-        <div class="wrap">
-          <div class="section-head fade-up"><div><span class="pill"><span class="dot"></span> Workspace Visuals</span><h2>San Francisco presence and modern digital delivery environment.</h2></div><p>All visuals in this section are concept placeholders. Replace them with licensed real office and team photos when available.</p></div>
-          <div class="visual-grid">
-            <article class="card visual fade-up"><img src="assets/visuals/san-francisco-presence.svg" alt="San Francisco presence concept visual"><div class="visual-body"><h3>San Francisco Presence</h3><p>Exterior concept visual for the business location context.</p></div></article>
-            <article class="card visual fade-up"><img src="assets/visuals/modern-office-interior.svg" alt="Modern office interior concept visual"><div class="visual-body"><h3>Modern Office Interior</h3><p>Concept workspace visual for a premium technology company feel.</p></div></article>
-            <article class="card visual fade-up"><img src="assets/visuals/developers-working.svg" alt="Developers working concept visual"><div class="visual-body"><h3>Developers Working</h3><p>Global delivery team concept showing software execution.</p></div></article>
-            <article class="card visual fade-up"><img src="assets/visuals/ai-engineering-workspace.svg" alt="AI engineering workspace concept visual"><div class="visual-body"><h3>AI Engineering Workspace</h3><p>AI operations concept for automation and intelligent systems.</p></div></article>
-            <article class="card visual fade-up"><img src="assets/visuals/executive-meeting-room.svg" alt="Executive meeting room concept visual"><div class="visual-body"><h3>Strategy Meeting Room</h3><p>Concept visual for planning, consulting, and client workshops.</p></div></article>
-            <article class="card visual fade-up"><img src="assets/visuals/dashboard-monitoring-room.svg" alt="Dashboard monitoring room concept visual"><div class="visual-body"><h3>Dashboard Monitoring</h3><p>Concept operations visual for analytics and performance oversight.</p></div></article>
-            <article class="card visual fade-up"><img src="assets/visuals/collaborative-software-team.svg" alt="Collaborative software team concept visual"><div class="visual-body"><h3>Collaborative Software Team</h3><p>Global team concept for product design and software delivery.</p></div></article>
-            <article class="card visual fade-up"><img src="assets/visuals/cloud-automation-ops.svg" alt="Cloud and automation operations concept visual"><div class="visual-body"><h3>Cloud and Automation Ops</h3><p>Concept infrastructure visual for cloud, APIs, and automation.</p></div></article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="services">
-        <div class="wrap">
-          <div class="section-head fade-up"><div><span class="pill"><span class="dot"></span> What We Do</span><h2>Digital systems for businesses that want to grow, automate, and compete.</h2></div><p>The About page now highlights services, capabilities, and business value with clean professional messaging.</p></div>
-          <div class="services">
-            <div class="card service fade-up"><h3>AI Automation</h3><p>Automate workflows, customer operations, internal processes, reporting, and repetitive business tasks.</p></div>
-            <div class="card service fade-up"><h3>Custom Software</h3><p>Build scalable web apps, internal tools, platforms, portals, and enterprise-grade digital products.</p></div>
-            <div class="card service fade-up"><h3>CRM and E-commerce</h3><p>Create connected sales systems, customer journeys, online ordering, payments, and operations dashboards.</p></div>
-            <div class="card service fade-up"><h3>Data and Cloud</h3><p>Develop dashboards, data pipelines, API integrations, cloud systems, and analytics foundations.</p></div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="logos">
-        <div class="wrap">
-          <div class="section-head fade-up"><div><span class="pill"><span class="dot"></span> Color Logo Motion</span><h2>Full-color placeholder logo motion instead of black-and-white client logos.</h2></div><p>These are fictional demo logo marks for layout testing. Replace them only with approved client logos before launch.</p></div>
-          <div class="marquee-wrap fade-up">
-            <div class="marquee" aria-label="Fictional demo client logos in motion">
-              <div class="logo-pill" style="--g:linear-gradient(135deg,#00d4ff,#2563eb)"><span class="logo-icon">N</span><span class="logo-name">NovaMart<small>Retail demo</small></span></div>
-              <div class="logo-pill" style="--g:linear-gradient(135deg,#22c55e,#06b6d4)"><span class="logo-icon">M</span><span class="logo-name">MediCore<small>Healthcare demo</small></span></div>
-              <div class="logo-pill" style="--g:linear-gradient(135deg,#f59e0b,#ef4444)"><span class="logo-icon">S</span><span class="logo-name">Skyline<small>Real estate demo</small></span></div>
-              <div class="logo-pill" style="--g:linear-gradient(135deg,#a855f7,#ec4899)"><span class="logo-icon">F</span><span class="logo-name">FinEdge<small>Finance demo</small></span></div>
-              <div class="logo-pill" style="--g:linear-gradient(135deg,#3b82f6,#8b5cf6)"><span class="logo-icon">E</span><span class="logo-name">EduCore<small>Education demo</small></span></div>
-              <div class="logo-pill" style="--g:linear-gradient(135deg,#14b8a6,#84cc16)"><span class="logo-icon">L</span><span class="logo-name">LogiLink<small>Logistics demo</small></span></div>
-              <div class="logo-pill" style="--g:linear-gradient(135deg,#00d4ff,#2563eb)"><span class="logo-icon">N</span><span class="logo-name">NovaMart<small>Retail demo</small></span></div>
-              <div class="logo-pill" style="--g:linear-gradient(135deg,#22c55e,#06b6d4)"><span class="logo-icon">M</span><span class="logo-name">MediCore<small>Healthcare demo</small></span></div>
-              <div class="logo-pill" style="--g:linear-gradient(135deg,#f59e0b,#ef4444)"><span class="logo-icon">S</span><span class="logo-name">Skyline<small>Real estate demo</small></span></div>
-              <div class="logo-pill" style="--g:linear-gradient(135deg,#a855f7,#ec4899)"><span class="logo-icon">F</span><span class="logo-name">FinEdge<small>Finance demo</small></span></div>
-              <div class="logo-pill" style="--g:linear-gradient(135deg,#3b82f6,#8b5cf6)"><span class="logo-icon">E</span><span class="logo-name">EduCore<small>Education demo</small></span></div>
-              <div class="logo-pill" style="--g:linear-gradient(135deg,#14b8a6,#84cc16)"><span class="logo-icon">L</span><span class="logo-name">LogiLink<small>Logistics demo</small></span></div>
-            </div>
-          </div>
-          <p class="note">This motion strip is only for visual placeholder use. Replace demo marks with approved client or partner logos before public launch.</p>
-        </div>
-      </section>
-
-      <section class="section" id="industries">
-        <div class="wrap">
-          <div class="section-head fade-up"><div><span class="pill"><span class="dot"></span> Industries We Serve</span><h2>A clear credibility section for business sectors and market focus.</h2></div><p>This section shows the business sectors Enterprium can support with digital systems and AI-powered delivery.</p></div>
-          <div class="industries fade-up">
-            <div class="industry">Retail</div><div class="industry">Healthcare</div><div class="industry">Real Estate</div><div class="industry">Finance</div><div class="industry">Education</div><div class="industry">Logistics</div><div class="industry">Construction</div><div class="industry">Startups</div><div class="industry">E-commerce</div><div class="industry">Professional Services</div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="mission">
-        <div class="wrap">
-          <div class="section-head fade-up"><div><span class="pill"><span class="dot"></span> Mission, Vision, Values</span><h2>Technology with structure, speed, and accountability.</h2></div><p>Enterprium’s messaging is written to sound premium, modern, clear, and business-focused.</p></div>
-          <div class="values">
-            <div class="card value fade-up"><h3>Mission</h3><p>Empower businesses with intelligent digital solutions that improve efficiency, visibility, automation, and growth.</p></div>
-            <div class="card value fade-up"><h3>Vision</h3><p>Become a trusted global technology partner for practical, scalable, and AI-powered transformation.</p></div>
-            <div class="card value fade-up"><h3>Innovation</h3><p>Use modern AI, automation, cloud, and software engineering to solve real business challenges.</p></div>
-            <div class="card value fade-up"><h3>Reliability</h3><p>Build clean, secure, maintainable, and scalable digital systems designed for long-term use.</p></div>
-            <div class="card value fade-up"><h3>Client Success</h3><p>Measure success by the business value, operational improvement, and growth our solutions create.</p></div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="contact">
-        <div class="wrap">
-          <div class="contact fade-up">
-            <div class="contact-grid">
-              <div><span class="pill"><span class="dot"></span> Work With Enterprium</span><h2>Let’s build intelligent systems for your business.</h2><p>Whether you need a premium website, CRM platform, e-commerce system, dashboard, automation workflow, AI chatbot, or complete digital transformation setup, Enterprium can help turn your business goals into practical digital solutions.</p></div>
-              <div class="contact-list">
-                <div class="contact-item"><span>Email</span><a href="mailto:contact@enterprium.com">contact@enterprium.com</a></div>
-                <div class="contact-item"><span>Location</span>995 Market St, San Francisco, CA 94103, United States</div>
-                <div class="contact-item"><span>Availability</span>Project discussions available through email and scheduled consultation.</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="wrap footer-inner"><div>© 2026 Enterprium. Engineering the Intelligent Enterprise.</div><div>AI-powered software house, San Francisco presence, global delivery.</div></div>
-    </footer>
+      <!-- Animated SF map -->
+      <div class="sfmap">
+        <svg viewBox="0 0 440 340" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
+          <defs><linearGradient id="mapbg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#0f2030"/><stop offset="100%" stop-color="#080e18"/></linearGradient></defs>
+          <rect width="440" height="340" fill="url(#mapbg)"/>
+          <!-- Street grid -->
+          <g stroke="rgba(255,255,255,.06)" stroke-width="0.8">
+            <line x1="0" y1="80" x2="440" y2="80"/><line x1="0" y1="140" x2="440" y2="140"/><line x1="0" y1="200" x2="440" y2="200"/><line x1="0" y1="260" x2="440" y2="260"/>
+            <line x1="60" y1="0" x2="60" y2="340"/><line x1="140" y1="0" x2="140" y2="340"/><line x1="220" y1="0" x2="220" y2="340"/><line x1="300" y1="0" x2="300" y2="340"/><line x1="380" y1="0" x2="380" y2="340"/>
+          </g>
+          <!-- Market Street highlight -->
+          <rect x="0" y="128" width="440" height="26" fill="rgba(22,163,74,.08)"/>
+          <line x1="0" y1="128" x2="440" y2="128" stroke="rgba(22,163,74,.3)" stroke-width="1"/>
+          <line x1="0" y1="154" x2="440" y2="154" stroke="rgba(22,163,74,.3)" stroke-width="1"/>
+          <text x="20" y="144" font-family="Inter,sans-serif" font-size="9" fill="rgba(22,163,74,.8)" font-weight="600">MARKET STREET</text>
+          <!-- 6th St -->
+          <rect x="208" y="0" width="20" height="340" fill="rgba(255,255,255,.04)"/>
+          <text x="210" y="20" font-family="Inter,sans-serif" font-size="9" fill="rgba(255,255,255,.4)">6TH ST</text>
+          <!-- City blocks -->
+          <rect x="65" y="85" width="68" height="50" fill="rgba(255,255,255,.04)" rx="2"/>
+          <rect x="145" y="85" width="56" height="50" fill="rgba(255,255,255,.03)" rx="2"/>
+          <rect x="230" y="85" width="62" height="50" fill="rgba(255,255,255,.04)" rx="2"/>
+          <rect x="305" y="85" width="68" height="50" fill="rgba(255,255,255,.03)" rx="2"/>
+          <rect x="65" y="160" width="68" height="35" fill="rgba(255,255,255,.03)" rx="2"/>
+          <rect x="145" y="160" width="56" height="35" fill="rgba(255,255,255,.04)" rx="2"/>
+          <rect x="230" y="160" width="62" height="35" fill="rgba(255,255,255,.03)" rx="2"/>
+          <rect x="305" y="160" width="68" height="35" fill="rgba(255,255,255,.04)" rx="2"/>
+          <!-- Marker pin with pulse -->
+          <circle cx="219" cy="141" r="20" fill="rgba(22,163,74,.18)" stroke="rgba(22,163,74,.55)" stroke-width="1.5"/>
+          <circle cx="219" cy="141" r="10" fill="rgba(22,163,74,.45)"/>
+          <circle cx="219" cy="141" r="5" fill="#16a34a"/>
+          <circle cx="219" cy="141" r="5" fill="none" stroke="#fff" stroke-width="1"/>
+          <!-- Pulse ring -->
+          <circle cx="219" cy="141" r="14" fill="none" stroke="rgba(22,163,74,.45)" stroke-width="1.2">
+            <animate attributeName="r" values="14;30;14" dur="2.5s" repeatCount="indefinite"/>
+            <animate attributeName="opacity" values="0.8;0;0.8" dur="2.5s" repeatCount="indefinite"/>
+          </circle>
+          <!-- Label -->
+          <rect x="232" y="128" width="96" height="28" rx="5" fill="rgba(22,163,74,.92)"/>
+          <text x="280" y="140" text-anchor="middle" font-family="Inter,sans-serif" font-size="9.5" fill="#fff" font-weight="700">Enterprium HQ</text>
+          <text x="280" y="151" text-anchor="middle" font-family="Inter,sans-serif" font-size="7.5" fill="rgba(255,255,255,.85)">995 Market St · SF</text>
+          <!-- BART -->
+          <circle cx="305" cy="141" r="7" fill="rgba(135,206,250,.25)" stroke="rgba(135,206,250,.55)" stroke-width="1"/>
+          <text x="315" y="139" font-family="Inter,sans-serif" font-size="7" fill="rgba(135,206,250,.75)">BART</text>
+          <!-- Union Square -->
+          <rect x="305" y="88" width="52" height="30" fill="rgba(255,220,100,.1)" rx="2"/>
+          <text x="331" y="107" text-anchor="middle" font-family="Inter,sans-serif" font-size="7.5" fill="rgba(255,220,100,.65)">Union Sq</text>
+          <!-- Ferry Building arrow -->
+          <path d="M385" d="M385 141 L440 110" stroke="rgba(255,255,255,.15)" stroke-width="1" stroke-dasharray="4 3"/>
+          <path d="M385 141 L440 110" stroke="rgba(255,255,255,.15)" stroke-width="1" stroke-dasharray="4 3"/>
+          <text x="390" y="107" font-family="Inter,sans-serif" font-size="7" fill="rgba(255,255,255,.35)">→ Embarcadero</text>
+        </svg>
+      </div>
+    </div>
   </div>
-  <script>
-    const observer = new IntersectionObserver((entries)=>{entries.forEach((entry)=>{if(entry.isIntersecting){entry.target.classList.add('visible')}})},{threshold:.14});
-    document.querySelectorAll('.fade-up').forEach((el)=>observer.observe(el));
-    document.querySelectorAll('a[href^="#"]').forEach((a)=>{a.addEventListener('click',(e)=>{const id=a.getAttribute('href');if(id.length>1){const target=document.querySelector(id);if(target){e.preventDefault();target.scrollIntoView({behavior:'smooth',block:'start'});}}});});
-  </script>
+</section>
+
+<!-- ══════════════ WHY US ══════════════ -->
+<section id="why">
+  <div class="wrap">
+    <div class="sh reveal">
+      <div class="eyebrow">Why Enterprium</div>
+      <h2>Why 250+ businesses chose us.</h2>
+      <p>Six reasons enterprises come to Enterprium — and why they stay.</p>
+    </div>
+    <div class="wgrid">
+      <div class="wc reveal"><div class="wi">🔍</div><h3>We understand your business before we write code</h3><p>Every engagement starts with structured discovery. We map your business model, data flows, and objectives before proposing any technical solution.</p></div>
+      <div class="wc reveal" style="transition-delay:.08s"><div class="wi">🔓</div><h3>You are never locked in</h3><p>Modular architecture, full documentation, clean handover. You own everything we build — always. No proprietary platforms, no knowledge hostage-taking.</p></div>
+      <div class="wc reveal" style="transition-delay:.12s"><div class="wi">🧠</div><h3>Real AI expertise, not theoretical</h3><p>We have been building production AI systems since before "AI transformation" became a marketing phrase — across finance, healthcare, retail, and SaaS.</p></div>
+      <div class="wc reveal" style="transition-delay:.16s"><div class="wi">⚡</div><h3>Speed without quality compromise</h3><p>AI-accelerated delivery moves faster than a traditional agency without the technical debt shortcuts create. We test thoroughly and document completely.</p></div>
+      <div class="wc reveal" style="transition-delay:.2s"><div class="wi">🤝</div><h3>Post-launch is not an afterthought</h3><p>We do not disappear at go-live. Ongoing support, monitoring, continuous improvement, and scaling roadmaps are included in every long-term engagement.</p></div>
+      <div class="wc reveal" style="transition-delay:.24s"><div class="wi">🏛️</div><h3>Enterprise-standard baseline</h3><p>Security architecture, CI/CD, staging environments, automated testing, compliance-ready infrastructure — our default, not an optional extra.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ STATS ══════════════ -->
+<section id="gstats">
+  <div class="wrap">
+    <div class="sh reveal"><div class="eyebrow">By the numbers</div><h2>Results that speak for themselves.</h2></div>
+    <div class="sblks">
+      <div class="sb"><div class="snum" data-target="250">0<span>+</span></div><div class="slbl2">Projects delivered globally</div></div>
+      <div class="sb"><div class="snum" data-target="40">0<span>+</span></div><div class="slbl2">Enterprise clients served</div></div>
+      <div class="sb"><div class="snum" data-target="98">0<span>%</span></div><div class="slbl2">Client satisfaction rate</div></div>
+      <div class="sb"><div class="snum" data-target="12">0<span>+</span></div><div class="slbl2">Countries we operate in</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ CLIENTS MARQUEE — FULL COLOUR LOGOS ══════════════ -->
+<section id="clients">
+  <div class="wrap">
+    <div class="sh reveal">
+      <div class="eyebrow">Trusted worldwide</div>
+      <h2>Companies building the future choose Enterprium.</h2>
+      <p>From Series A scale-ups to enterprise organisations — across finance, healthcare, retail, manufacturing, education, and SaaS. Our clients return because the work speaks.</p>
+    </div>
+  </div>
+  <!-- ROW 1 left scroll -->
+  <div class="mtrack">
+    <div class="mrow mr1">
+      <div class="lchip"><svg viewBox="0 0 80 28" xmlns="http://www.w3.org/2000/svg"><text x="2" y="21" font-family="Arial" font-size="22" font-weight="700" fill="#4285F4">G</text><text x="18" y="21" font-family="Arial" font-size="22" font-weight="700" fill="#EA4335">o</text><text x="32" y="21" font-family="Arial" font-size="22" font-weight="700" fill="#FBBC05">o</text><text x="46" y="21" font-family="Arial" font-size="22" font-weight="700" fill="#4285F4">g</text><text x="60" y="21" font-family="Arial" font-size="22" font-weight="700" fill="#34A853">l</text><text x="72" y="21" font-family="Arial" font-size="22" font-weight="700" fill="#EA4335">e</text></svg></div>
+      <div class="lchip"><svg viewBox="0 0 110 28" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="6" width="11" height="11" fill="#F25022"/><rect x="12" y="6" width="11" height="11" fill="#7FBA00"/><rect x="0" y="18" width="11" height="11" fill="#00A4EF"/><rect x="12" y="18" width="11" height="11" fill="#FFB900"/><text x="28" y="21" font-family="Arial" font-size="14" font-weight="700" fill="#555">Microsoft</text></svg></div>
+      <div class="lchip"><svg viewBox="0 0 80 28" xmlns="http://www.w3.org/2000/svg"><text x="4" y="21" font-family="Arial" font-size="18" font-weight="800" fill="#FF9900">aws</text></svg></div>
+      <div class="lchip"><svg viewBox="0 0 140 28" xmlns="http://www.w3.org/2000/svg"><text x="2" y="21" font-family="Arial" font-size="17" font-weight="700" fill="#00A1E0">salesforce</text></svg></div>
+      <div class="lchip"><svg viewBox="0 0 120 28" xmlns="http://www.w3.org/2000/svg"><circle cx="14" cy="14" r="8" fill="#FF7A59"/><circle cx="14" cy="6" r="3.5" fill="#FF7A59"/><circle cx="22" cy="20" r="3.5" fill="#FF7A59"/><circle cx="6" cy="20" r="3.5" fill="#FF7A59"/><text x="28" y="20" font-family="Arial" font-size="15" font-weight="700" fill="#2D3E50">HubSpot</text></svg></div>
+      <div class="lchip"><svg viewBox="0 0 80 28" xmlns="http://www.w3.org/2000/svg"><text x="4" y="21" font-family="Arial" font-size="20" font-weight="800" fill="#635BFF">stripe</text></svg></div>
+      <div class="lchip"><svg viewBox="0 0 100 28" xmlns="http://www.w3.org/2000/svg"><text x="2" y="21" font-family="Arial" font-size="17" font-weight="700" fill="#2c2c2c">Shopify</text></svg></div>
+      <div class="lchip"><svg viewBox="0 0 90 28" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="10" width="7" height="7" rx="2.5" fill="#E01E5A"/><rect x="2" y="19" width="7" height="7" rx="2.5" fill="#36C5F0"/><rect x="10" y="10" width="7" height="7" rx="2.5" fill="#2EB67D"/><rect x="10" y="19" width="7" height="7" rx="2.5" fill="#ECB22E"/><text x="24" y="21" font-family="Arial" font-size="15" font-weight="700" fill="#2c2c2c">Slack</text></svg></div>
+      <div class="lchip"><svg viewBox="0 0 100 28" xmlns="http://www.w3.org/2000/svg"><circle cx="13" cy="14" r="10" fill="#F22F46"/><circle cx="9" cy="11" r="3" fill="#fff"/><circle cx="17" cy="11" r="3" fill="#fff"/><circle cx="9" cy="18" r="3" fill="#fff"/><circle cx="17" cy="18" r="3" fill="#fff"/><text x="28" y="20" font-family="Arial" font-size="14" font-weight="700" fill="#2c2c2c">Twilio</text></svg></div>
+      <div class="lchip"><svg viewBox="0 0 130 28" xmlns="http://www.w3.org/2000/svg"><polygon points="13,4 21,10 21,20 13,26 5,20 5,10" fill="#FF3621"/><text x="28" y="20" font-family="Arial" font-size="14" font-weight="700" fill="#2c2c2c">Databricks</text></svg></div>
+      <div class="lchip"><svg viewBox="0 0 120 28" xmlns="http://www.w3.org/2000/svg"><path d="M13 2v24M5 8l16 0M5 20l16 0M5 8l8 7M13 15l8-7M5 20l8-7M13 15l8 7" stroke="#29B5E8" stroke-width="2.5" stroke-linecap="round"/><circle cx="13" cy="15" r="3" fill="#29B5E8"/><text x="30" y="20" font-family="Arial" font-size="14" font-weight="700" fill="#2c2c2c">Snowflake</text></svg></div>
+      <div class="lchip"><svg viewBox="0 0 100 28" xmlns="http://www.w3.org/2000/svg"><text x="2" y="21" font-family="Arial" font-size="15" font-weight="700" fill="#2c2c2c">Notion</text></svg></div>
+      <div class="lchip"><svg viewBox="0 0 90 28" xmlns="http://www.w3.org/2000/svg"><polygon points="13,4 22,22 4,22" fill="#000"/><text x="28" y="20" font-family="Arial" font-size="14" font-weight="700" fill="#000">Vercel</text></svg></div>
+      <div class="lchip"><svg viewBox="0 0 80 28" xmlns="http://www.w3.org/2000/svg"><circle cx="13" cy="7" r="6" fill="#F24E1E"/><circle cx="13" cy="14" r="6" fill="#FF7262"/><circle cx="20" cy="14" r="6" fill="#1ABCFE"/><circle cx="13" cy="21" r="6" fill="#0ACF83"/><rect x="7" y="2" width="7" height="12" fill="#A259FF" rx="2"/><text x="30" y="20" font-family="Arial" font-size="14" font-weight="700" fill="#2c2c2c">Figma</text></svg></div>
+      <div class="lchip"><svg viewBox="0 0 90 28" xmlns="http://www.w3.org/2000/svg"><circle cx="13" cy="14" r="10" fill="#24292e"/><text x="28" y="20" font-family="Arial" font-size="14" font-weight="600" fill="#2c2c2c">GitHub</text></svg></div>
+      <!-- Duplicate set for infinite loop -->
+      <div class="lchip"><svg viewBox="0 0 80 28" xmlns="http://www.w3.org/2000/svg"><text x="2" y="21" font-family="Arial" font-size="22" font-weight="700" fill="#4285F4">G</text><text x="18" y="21" font-family="Arial" font-size="22" font-weight="700" fill="#EA4335">o</text><text x="32" y="21" font-family="Arial" font-size="22" font-weight="700" fill="#FBBC05">o</text><text x="46" y="21" font-family="Arial" font-size="22" font-weight="700" fill="#4285F4">g</text><text x="60" y="21" font-family="Arial" font-size="22" font-weight="700" fill="#34A853">l</text><text x="72" y="21" font-family="Arial" font-size="22" font-weight="700" fill="#EA4335">e</text></svg></div>
+      <div class="lchip"><svg viewBox="0 0 110 28" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="6" width="11" height="11" fill="#F25022"/><rect x="12" y="6" width="11" height="11" fill="#7FBA00"/><rect x="0" y="18" width="11" height="11" fill="#00A4EF"/><rect x="12" y="18" width="11" height="11" fill="#FFB900"/><text x="28" y="21" font-family="Arial" font-size="14" font-weight="700" fill="#555">Microsoft</text></svg></div>
+      <div class="lchip"><svg viewBox="0 0 80 28" xmlns="http://www.w3.org/2000/svg"><text x="4" y="21" font-family="Arial" font-size="18" font-weight="800" fill="#FF9900">aws</text></svg></div>
+      <div class="lchip"><svg viewBox="0 0 140 28" xmlns="http://www.w3.org/2000/svg"><text x="2" y="21" font-family="Arial" font-size="17" font-weight="700" fill="#00A1E0">salesforce</text></svg></div>
+      <div class="lchip"><svg viewBox="0 0 80 28" xmlns="http://www.w3.org/2000/svg"><text x="4" y="21" font-family="Arial" font-size="20" font-weight="800" fill="#635BFF">stripe</text></svg></div>
+      <div class="lchip"><svg viewBox="0 0 90 28" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="10" width="7" height="7" rx="2.5" fill="#E01E5A"/><rect x="2" y="19" width="7" height="7" rx="2.5" fill="#36C5F0"/><rect x="10" y="10" width="7" height="7" rx="2.5" fill="#2EB67D"/><rect x="10" y="19" width="7" height="7" rx="2.5" fill="#ECB22E"/><text x="24" y="21" font-family="Arial" font-size="15" font-weight="700" fill="#2c2c2c">Slack</text></svg></div>
+      <div class="lchip"><svg viewBox="0 0 120 28" xmlns="http://www.w3.org/2000/svg"><path d="M13 2v24M5 8l16 0M5 20l16 0M5 8l8 7M13 15l8-7M5 20l8-7M13 15l8 7" stroke="#29B5E8" stroke-width="2.5" stroke-linecap="round"/><circle cx="13" cy="15" r="3" fill="#29B5E8"/><text x="30" y="20" font-family="Arial" font-size="14" font-weight="700" fill="#2c2c2c">Snowflake</text></svg></div>
+    </div>
+  </div>
+  <!-- ROW 2 right scroll -->
+  <div class="mtrack" style="margin-top:12px">
+    <div class="mrow mr2">
+      <div class="lchip"><svg viewBox="0 0 60 28" xmlns="http://www.w3.org/2000/svg"><rect width="60" height="28" rx="4" fill="#009FD4"/><text x="30" y="19" text-anchor="middle" font-family="Arial" font-size="15" font-weight="800" fill="#fff">SAP</text></svg></div>
+      <div class="lchip"><svg viewBox="0 0 90 28" xmlns="http://www.w3.org/2000/svg"><text x="2" y="21" font-family="Arial" font-size="18" font-weight="700" fill="#C74634">oracle</text></svg></div>
+      <div class="lchip"><svg viewBox="0 0 110 28" xmlns="http://www.w3.org/2000/svg"><circle cx="13" cy="14" r="10" fill="#03363D"/><text x="28" y="20" font-family="Arial" font-size="13" font-weight="700" fill="#2c2c2c">Zendesk</text></svg></div>
+      <div class="lchip"><svg viewBox="0 0 140 28" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="14" r="7" fill="#FF3D57"/><circle cx="22" cy="14" r="7" fill="#FFCB00"/><circle cx="34" cy="14" r="7" fill="#00CA72"/><text x="48" y="20" font-family="Arial" font-size="12" font-weight="700" fill="#2c2c2c">monday.com</text></svg></div>
+      <div class="lchip"><svg viewBox="0 0 100 28" xmlns="http://www.w3.org/2000/svg"><polygon points="11,4 18,22 4,22" fill="#000"/><text x="25" y="20" font-family="Arial" font-size="14" font-weight="700" fill="#000">Vercel</text></svg></div>
+      <div class="lchip"><svg viewBox="0 0 110 28" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="2" width="10" height="10" rx="3" fill="#2684FF"/><text x="18" y="20" font-family="Arial" font-size="13" font-weight="700" fill="#2c2c2c">Atlassian</text></svg></div>
+      <div class="lchip"><svg viewBox="0 0 90 28" xmlns="http://www.w3.org/2000/svg"><circle cx="11" cy="12" r="7" fill="#FC636B"/><circle cx="5" cy="21" r="5" fill="#FC636B" opacity=".7"/><circle cx="18" cy="21" r="5" fill="#FC636B" opacity=".7"/><text x="28" y="20" font-family="Arial" font-size="13" font-weight="700" fill="#2c2c2c">Asana</text></svg></div>
+      <div class="lchip"><svg viewBox="0 0 100 28" xmlns="http://www.w3.org/2000/svg"><text x="2" y="21" font-family="Arial" font-size="15" font-weight="700" fill="#2c2c2c">Intercom</text></svg></div>
+      <div class="lchip"><svg viewBox="0 0 90 28" xmlns="http://www.w3.org/2000/svg"><text x="2" y="21" font-family="Arial" font-size="15" font-weight="700" fill="#0052CC">Jira</text></svg></div>
+      <div class="lchip"><svg viewBox="0 0 120 28" xmlns="http://www.w3.org/2000/svg"><text x="2" y="21" font-family="Arial" font-size="13" font-weight="700" fill="#2c2c2c">Cloudflare</text></svg></div>
+      <div class="lchip"><svg viewBox="0 0 90 28" xmlns="http://www.w3.org/2000/svg"><text x="2" y="21" font-family="Arial" font-size="14" font-weight="700" fill="#7952B3">Webflow</text></svg></div>
+      <div class="lchip"><svg viewBox="0 0 100 28" xmlns="http://www.w3.org/2000/svg"><text x="2" y="21" font-family="Arial" font-size="13" font-weight="700" fill="#FF6600">Amplitude</text></svg></div>
+      <div class="lchip"><svg viewBox="0 0 80 28" xmlns="http://www.w3.org/2000/svg"><text x="2" y="21" font-family="Arial" font-size="15" font-weight="700" fill="#00BFFF">Docker</text></svg></div>
+      <div class="lchip"><svg viewBox="0 0 80 28" xmlns="http://www.w3.org/2000/svg"><text x="2" y="21" font-family="Arial" font-size="14" font-weight="700" fill="#F0522C">Retool</text></svg></div>
+      <!-- Duplicate for loop -->
+      <div class="lchip"><svg viewBox="0 0 60 28" xmlns="http://www.w3.org/2000/svg"><rect width="60" height="28" rx="4" fill="#009FD4"/><text x="30" y="19" text-anchor="middle" font-family="Arial" font-size="15" font-weight="800" fill="#fff">SAP</text></svg></div>
+      <div class="lchip"><svg viewBox="0 0 90 28" xmlns="http://www.w3.org/2000/svg"><text x="2" y="21" font-family="Arial" font-size="18" font-weight="700" fill="#C74634">oracle</text></svg></div>
+      <div class="lchip"><svg viewBox="0 0 140 28" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="14" r="7" fill="#FF3D57"/><circle cx="22" cy="14" r="7" fill="#FFCB00"/><circle cx="34" cy="14" r="7" fill="#00CA72"/><text x="48" y="20" font-family="Arial" font-size="12" font-weight="700" fill="#2c2c2c">monday.com</text></svg></div>
+      <div class="lchip"><svg viewBox="0 0 80 28" xmlns="http://www.w3.org/2000/svg"><text x="2" y="21" font-family="Arial" font-size="14" font-weight="700" fill="#7952B3">Webflow</text></svg></div>
+      <div class="lchip"><svg viewBox="0 0 80 28" xmlns="http://www.w3.org/2000/svg"><text x="2" y="21" font-family="Arial" font-size="15" font-weight="700" fill="#00BFFF">Docker</text></svg></div>
+      <div class="lchip"><svg viewBox="0 0 90 28" xmlns="http://www.w3.org/2000/svg"><circle cx="11" cy="12" r="7" fill="#FC636B"/><circle cx="5" cy="21" r="5" fill="#FC636B" opacity=".7"/><circle cx="18" cy="21" r="5" fill="#FC636B" opacity=".7"/><text x="28" y="20" font-family="Arial" font-size="13" font-weight="700" fill="#2c2c2c">Asana</text></svg></div>
+    </div>
+  </div>
+  <p style="text-align:center;font-size:12.5px;color:var(--muted);margin-top:28px;padding:0 24px">Logos shown are property of their respective owners. Enterprium makes no claim of partnership or endorsement beyond completed project engagements.</p>
+</section>
+
+<!-- ══════════════ CTA ══════════════ -->
+<section id="cta">
+  <div class="ctabg"></div><div class="ctagl"></div>
+  <div class="wrap">
+    <div class="ctai">
+      <div class="eyebrow" style="background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.18);color:#a7f3d0">Free Discovery Call</div>
+      <h2>Ready to engineer your intelligent enterprise?</h2>
+      <p>Let's map out the right architecture, timeline, and approach for your project. No commitment required.</p>
+      <div class="ctabtns">
+        <a href="mailto:contact@enterprium.com" class="btn btn-g" style="font-size:15px;padding:13px 28px">Start the Conversation →</a>
+        <a href="index.html" class="btn" style="background:rgba(255,255,255,.1);color:#fff;border:1.5px solid rgba(255,255,255,.2);font-size:15px;padding:13px 28px">← Back to Home</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ FOOTER ══════════════ -->
+<footer>
+  <div class="wrap">
+    <div class="ftg">
+      <div class="fb">
+        <span class="flogo">Enterp<span>ium</span></span>
+        <p>Engineering intelligent systems, automation, and enterprise software for modern businesses globally.</p>
+      </div>
+      <div class="fcol">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="index.html#services">AI Agents</a></li>
+          <li><a href="index.html#services">Web Platforms</a></li>
+          <li><a href="index.html#services">Dashboards &amp; CRM</a></li>
+          <li><a href="index.html#services">E-commerce</a></li>
+          <li><a href="index.html#services">Cloud &amp; Data</a></li>
+        </ul>
+      </div>
+      <div class="fcol">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#story">Our Story</a></li>
+          <li><a href="#mvv">Mission &amp; Values</a></li>
+          <li><a href="#leadership">Leadership</a></li>
+          <li><a href="#sf">San Francisco</a></li>
+        </ul>
+      </div>
+      <div class="fcol">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:contact@enterprium.com">contact@enterprium.com</a></li>
+          <li><a href="#sf">995 Market St, SF</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="fbot">
+      <p>© 2025 Enterprium. All rights reserved. · 995 Market St, San Francisco, CA 94103</p>
+      <div class="socs">
+        <a href="#" class="socb" aria-label="LinkedIn"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a>
+        <a href="#" class="socb" aria-label="GitHub"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+function toggleMob(){document.getElementById('mm').classList.toggle('open')}
+// Scroll reveals
+const ro=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('vis');ro.unobserve(x.target)}})},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>ro.observe(el));
+// Leadership cards
+const lo=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('vis');lo.unobserve(x.target)}})},{threshold:.1});
+document.querySelectorAll('.lc').forEach(el=>lo.observe(el));
+// Office tiles
+const oo=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('vis');oo.unobserve(x.target)}})},{threshold:.1});
+document.querySelectorAll('.otile').forEach(el=>oo.observe(el));
+// Counter animation
+const co=new IntersectionObserver(e=>{
+  e.forEach(x=>{
+    if(!x.isIntersecting)return;
+    const el=x.target,tgt=+el.dataset.target,sfx=el.querySelector('span').outerHTML;
+    let v=0;const step=tgt/55;
+    const t=setInterval(()=>{v=Math.min(v+step,tgt);el.innerHTML=Math.round(v)+sfx;if(v>=tgt)clearInterval(t)},18);
+    co.unobserve(el);
+  });
+},{threshold:.5});
+document.querySelectorAll('.snum[data-target]').forEach(n=>co.observe(n));
+// Active nav
+const secs=document.querySelectorAll('section[id]');
+const nls=document.querySelectorAll('.nl a');
+window.addEventListener('scroll',()=>{let c='';secs.forEach(s=>{if(window.scrollY>=s.offsetTop-80)c=s.id});nls.forEach(a=>a.classList.toggle('act',a.getAttribute('href')==='#'+c));},{ passive:true });
+</script>
 </body>
 </html>
